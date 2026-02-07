@@ -1,0 +1,3533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Locals Diner — Breakfast & Lunch | Dracut, MA</title>
+<meta name="description" content="Where Locals Become Family. Serving scratch-made breakfast & lunch in Dracut, MA. Great Food • Great Portions • Great People. Open Wed-Sun 7:30 AM – 2:00 PM.">
+<meta name="keywords" content="Locals Diner, Dracut MA, breakfast, lunch, diner, family restaurant, Beanshooter Coffee">
+<meta property="og:title" content="Locals Diner — Where Locals Become Family">
+<meta property="og:description" content="Scratch-made breakfast & lunch in Dracut, MA. Great Food • Great Portions • Great People.">
+<meta property="og:image" content="images/logo_tsp.jpeg">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/jpeg" href="images/logo_tsp.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,400;1,9..144,500&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+/* ============================================
+   DESIGN SYSTEM — LOCALS DINER
+   ============================================ */
+
+:root {
+  /* Brand Colors */
+  --navy: #1B2D4F;
+  --navy-deep: #0F1A2E;
+  --navy-light: #2A4270;
+  --teal: #00B4D8;
+  --teal-light: #48CAE4;
+  --teal-dark: #0096B7;
+  --teal-glow: rgba(0, 180, 216, 0.15);
+  --orange: #F5A623;
+  --orange-light: #F7BC5C;
+  --orange-dark: #E09010;
+  --orange-glow: rgba(245, 166, 35, 0.15);
+  --cream: #F5F0E8;
+  --cream-dark: #E8E0D4;
+  --cream-light: #FAF8F4;
+  --white: #FFFFFF;
+  --black: #0A0A0A;
+
+  /* Semantic */
+  --text-primary: #1B2D4F;
+  --text-secondary: #5A6A80;
+  --text-muted: #8A96A6;
+  --text-on-dark: #F5F0E8;
+  --text-on-dark-muted: rgba(245, 240, 232, 0.7);
+  --border: rgba(27, 45, 79, 0.1);
+  --border-dark: rgba(245, 240, 232, 0.15);
+
+  /* Typography */
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Spacing Scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --space-10: 128px;
+
+  /* Sizing */
+  --container: 1200px;
+  --container-narrow: 900px;
+  --container-wide: 1400px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 32px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(27, 45, 79, 0.06), 0 1px 2px rgba(27, 45, 79, 0.04);
+  --shadow-md: 0 4px 12px rgba(27, 45, 79, 0.08), 0 2px 4px rgba(27, 45, 79, 0.04);
+  --shadow-lg: 0 12px 40px rgba(27, 45, 79, 0.12), 0 4px 12px rgba(27, 45, 79, 0.06);
+  --shadow-xl: 0 24px 60px rgba(27, 45, 79, 0.16), 0 8px 24px rgba(27, 45, 79, 0.08);
+  --shadow-glow-teal: 0 0 30px rgba(0, 180, 216, 0.3);
+  --shadow-glow-orange: 0 0 30px rgba(245, 166, 35, 0.3);
+
+  /* Transitions */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --duration-fast: 200ms;
+  --duration-normal: 400ms;
+  --duration-slow: 600ms;
+
+  /* Nav */
+  --nav-height: 80px;
+}
+
+/* ============================================
+   RESET & BASE
+   ============================================ */
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  scroll-padding-top: var(--nav-height);
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-primary);
+  background: var(--cream);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--duration-fast) var(--ease-out);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--text-primary);
+}
+
+.heading-xl {
+  font-size: clamp(2.8rem, 6vw, 5.5rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
+
+.heading-lg {
+  font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+}
+
+.heading-md {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.heading-sm {
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.text-lg {
+  font-size: clamp(1.05rem, 1.5vw, 1.25rem);
+  line-height: 1.75;
+}
+
+.text-body {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* ============================================
+   LAYOUT
+   ============================================ */
+
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--space-5);
+}
+
+.container--narrow {
+  max-width: var(--container-narrow);
+}
+
+.container--wide {
+  max-width: var(--container-wide);
+}
+
+.section {
+  padding: var(--space-9) 0;
+  position: relative;
+}
+
+.section--lg {
+  padding: var(--space-10) 0;
+}
+
+/* ============================================
+   COMPONENTS
+   ============================================ */
+
+/* Eyebrow / Kicker */
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--teal);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.eyebrow::before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 2px;
+  background: var(--teal);
+  border-radius: 2px;
+}
+
+.eyebrow--orange {
+  color: var(--orange);
+}
+
+.eyebrow--orange::before {
+  background: var(--orange);
+}
+
+.eyebrow--light {
+  color: var(--teal-light);
+}
+
+.eyebrow--light::before {
+  background: var(--teal-light);
+}
+
+/* Section Intro */
+.section-intro {
+  max-width: 680px;
+  margin-bottom: var(--space-8);
+}
+
+.section-intro.centered {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.section-intro .eyebrow {
+  justify-content: inherit;
+}
+
+.section-intro.centered .eyebrow {
+  justify-content: center;
+}
+
+.section-intro p {
+  color: var(--text-secondary);
+  margin-top: var(--space-4);
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  padding: 14px 32px;
+  border-radius: var(--radius-full);
+  transition: all var(--duration-normal) var(--ease-out);
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity var(--duration-fast) var(--ease-out);
+}
+
+.btn:hover::before {
+  opacity: 1;
+}
+
+.btn--primary {
+  background: var(--orange);
+  color: var(--navy-deep);
+}
+
+.btn--primary::before {
+  background: linear-gradient(135deg, var(--orange-light), var(--orange-dark));
+}
+
+.btn--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-glow-orange);
+}
+
+.btn--secondary {
+  background: transparent;
+  color: var(--white);
+  border: 2px solid rgba(255,255,255,0.3);
+}
+
+.btn--secondary:hover {
+  border-color: var(--white);
+  background: rgba(255,255,255,0.1);
+  transform: translateY(-2px);
+}
+
+.btn--teal {
+  background: var(--teal);
+  color: var(--white);
+}
+
+.btn--teal::before {
+  background: linear-gradient(135deg, var(--teal-light), var(--teal-dark));
+}
+
+.btn--teal:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-glow-teal);
+}
+
+.btn--outline {
+  background: transparent;
+  color: var(--navy);
+  border: 2px solid var(--navy);
+}
+
+.btn--outline:hover {
+  background: var(--navy);
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
+.btn--lg {
+  padding: 18px 42px;
+  font-size: 1rem;
+}
+
+.btn--sm {
+  padding: 10px 24px;
+  font-size: 0.85rem;
+}
+
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  align-items: center;
+}
+
+/* Divider */
+.divider {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--teal), var(--orange));
+  border-radius: 3px;
+  margin: var(--space-5) 0;
+}
+
+.divider.centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Cards */
+.card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: all var(--duration-normal) var(--ease-out);
+  box-shadow: var(--shadow-sm);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Badge */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 6px 16px;
+  border-radius: var(--radius-full);
+  background: var(--teal-glow);
+  color: var(--teal);
+}
+
+.badge--orange {
+  background: var(--orange-glow);
+  color: var(--orange-dark);
+}
+
+/* ============================================
+   REVEAL ANIMATIONS
+   ============================================ */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out);
+}
+
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out);
+}
+
+.reveal-left.revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out);
+}
+
+.reveal-right.revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.92);
+  transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out);
+}
+
+.reveal-scale.revealed {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.stagger-1 { transition-delay: 0.1s; }
+.stagger-2 { transition-delay: 0.2s; }
+.stagger-3 { transition-delay: 0.3s; }
+.stagger-4 { transition-delay: 0.4s; }
+.stagger-5 { transition-delay: 0.5s; }
+.stagger-6 { transition-delay: 0.6s; }
+
+/* ============================================
+   NAVIGATION
+   ============================================ */
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: var(--nav-height);
+  display: flex;
+  align-items: center;
+  transition: all var(--duration-normal) var(--ease-out);
+  background: transparent;
+}
+
+.nav.scrolled {
+  background: rgba(15, 26, 46, 0.97);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+  height: 70px;
+}
+
+.nav__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: var(--container-wide);
+  margin: 0 auto;
+  padding: 0 var(--space-5);
+}
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  z-index: 1001;
+}
+
+.nav__logo img {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform var(--duration-normal) var(--ease-out);
+  border: 2px solid rgba(255,255,255,0.2);
+}
+
+.nav.scrolled .nav__logo img {
+  width: 44px;
+  height: 44px;
+}
+
+.nav__logo:hover img {
+  transform: rotate(-8deg) scale(1.05);
+}
+
+.nav__logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav__logo-name {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--white);
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+}
+
+.nav__logo-tagline {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--teal-light);
+  line-height: 1;
+  margin-top: 2px;
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.nav__link {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.8);
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  transition: all var(--duration-fast) var(--ease-out);
+  position: relative;
+}
+
+.nav__link:hover {
+  color: var(--white);
+  background: rgba(255,255,255,0.08);
+}
+
+.nav__cta {
+  margin-left: var(--space-3);
+}
+
+/* Hamburger */
+.nav__hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: 8px;
+  z-index: 1001;
+  cursor: pointer;
+}
+
+.nav__hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--white);
+  border-radius: 2px;
+  transition: all var(--duration-normal) var(--ease-out);
+  transform-origin: center;
+}
+
+.nav__hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.nav__hamburger.active span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.nav__hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobile Menu */
+.nav__mobile {
+  position: fixed;
+  inset: 0;
+  background: var(--navy-deep);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-4);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--duration-normal) var(--ease-out);
+}
+
+.nav__mobile.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.nav__mobile a {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--white);
+  padding: 8px 20px;
+  border-radius: var(--radius-md);
+  transition: all var(--duration-fast) var(--ease-out);
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+.nav__mobile.open a {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.nav__mobile a:nth-child(1) { transition-delay: 0.05s; }
+.nav__mobile a:nth-child(2) { transition-delay: 0.1s; }
+.nav__mobile a:nth-child(3) { transition-delay: 0.15s; }
+.nav__mobile a:nth-child(4) { transition-delay: 0.2s; }
+.nav__mobile a:nth-child(5) { transition-delay: 0.25s; }
+.nav__mobile a:nth-child(6) { transition-delay: 0.3s; }
+.nav__mobile a:nth-child(7) { transition-delay: 0.35s; }
+.nav__mobile a:nth-child(8) { transition-delay: 0.4s; }
+
+.nav__mobile a:hover {
+  color: var(--teal-light);
+  background: rgba(0, 180, 216, 0.08);
+}
+
+.nav__mobile-hours {
+  margin-top: var(--space-6);
+  text-align: center;
+  color: var(--text-on-dark-muted);
+  font-size: 0.9rem;
+}
+
+.nav__mobile-hours strong {
+  color: var(--orange);
+}
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: var(--navy-deep);
+}
+
+.hero__bg {
+  position: absolute;
+  inset: 0;
+}
+
+.hero__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.4) saturate(1.2);
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(135deg, rgba(15, 26, 46, 0.92) 0%, rgba(15, 26, 46, 0.5) 50%, rgba(15, 26, 46, 0.7) 100%),
+    linear-gradient(to bottom, transparent 60%, rgba(15, 26, 46, 0.95) 100%);
+}
+
+/* Decorative elements */
+.hero__deco {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.hero__deco--teal {
+  width: 500px;
+  height: 500px;
+  background: var(--teal);
+  top: -200px;
+  right: -100px;
+  opacity: 0.08;
+}
+
+.hero__deco--orange {
+  width: 400px;
+  height: 400px;
+  background: var(--orange);
+  bottom: -150px;
+  left: -100px;
+  opacity: 0.06;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: calc(var(--nav-height) + var(--space-8)) 0 var(--space-8);
+}
+
+.hero__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  background: rgba(0, 180, 216, 0.1);
+  border: 1px solid rgba(0, 180, 216, 0.2);
+  border-radius: var(--radius-full);
+  padding: 8px 20px;
+  margin-bottom: var(--space-6);
+  color: var(--teal-light);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  backdrop-filter: blur(10px);
+  animation: fadeInUp 0.8s var(--ease-out) 0.2s both;
+}
+
+.hero__badge svg {
+  width: 16px;
+  height: 16px;
+}
+
+.hero__title {
+  color: var(--white);
+  font-size: clamp(3rem, 7vw, 5.8rem);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  margin-bottom: var(--space-5);
+  animation: fadeInUp 0.8s var(--ease-out) 0.4s both;
+}
+
+.hero__title span {
+  display: inline;
+}
+
+.hero__title .accent-teal {
+  color: var(--teal-light);
+}
+
+.hero__title .accent-orange {
+  color: var(--orange);
+  font-style: italic;
+}
+
+.hero__subtitle {
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  color: rgba(245, 240, 232, 0.8);
+  line-height: 1.7;
+  max-width: 560px;
+  margin-bottom: var(--space-7);
+  animation: fadeInUp 0.8s var(--ease-out) 0.6s both;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  align-items: center;
+  animation: fadeInUp 0.8s var(--ease-out) 0.8s both;
+}
+
+.hero__scroll {
+  position: absolute;
+  bottom: var(--space-7);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  color: rgba(255,255,255,0.4);
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  animation: fadeInUp 0.8s var(--ease-out) 1.2s both;
+  z-index: 2;
+}
+
+.hero__scroll-line {
+  width: 1px;
+  height: 50px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.4), transparent);
+  animation: scrollPulse 2s ease-in-out infinite;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scrollPulse {
+  0%, 100% { opacity: 0.4; transform: scaleY(1); }
+  50% { opacity: 1; transform: scaleY(1.2); }
+}
+
+/* ============================================
+   HOURS RIBBON
+   ============================================ */
+
+.hours-ribbon {
+  background: var(--navy);
+  padding: var(--space-6) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hours-ribbon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--teal), var(--orange), var(--teal));
+}
+
+.hours-ribbon__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-6);
+  text-align: center;
+}
+
+.hours-ribbon__item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  color: var(--text-on-dark);
+}
+
+.hours-ribbon__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(0, 180, 216, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.hours-ribbon__icon svg {
+  width: 20px;
+  height: 20px;
+  color: var(--teal-light);
+}
+
+.hours-ribbon__text {
+  text-align: left;
+}
+
+.hours-ribbon__label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-on-dark-muted);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.hours-ribbon__value {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--white);
+  line-height: 1.2;
+}
+
+.hours-ribbon__value a {
+  color: var(--teal-light);
+  transition: color var(--duration-fast);
+}
+
+.hours-ribbon__value a:hover {
+  color: var(--white);
+}
+
+.hours-ribbon__divider {
+  width: 1px;
+  height: 40px;
+  background: rgba(255,255,255,0.1);
+}
+
+/* ============================================
+   ABOUT / WELCOME
+   ============================================ */
+
+.about {
+  background: var(--cream-light);
+  overflow: hidden;
+}
+
+.about__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-8);
+  align-items: center;
+}
+
+.about__images {
+  position: relative;
+}
+
+.about__img-main {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+  position: relative;
+}
+
+.about__img-main img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  transition: transform 0.6s var(--ease-out);
+}
+
+.about__img-main:hover img {
+  transform: scale(1.03);
+}
+
+.about__img-float {
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+  width: 200px;
+  height: 200px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+  border: 5px solid var(--cream-light);
+}
+
+.about__img-float img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about__badge-float {
+  position: absolute;
+  top: -16px;
+  left: -16px;
+  background: var(--orange);
+  color: var(--navy-deep);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-lg);
+  z-index: 2;
+}
+
+.about__badge-float .year {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.about__badge-float .text {
+  font-size: 0.55rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.about__content {
+  padding: var(--space-5) 0;
+}
+
+.about__content p {
+  color: var(--text-secondary);
+  margin-bottom: var(--space-4);
+}
+
+.about__values {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+}
+
+.about__value {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+}
+
+.about__value-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  background: var(--teal-glow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.about__value-icon svg {
+  width: 20px;
+  height: 20px;
+  color: var(--teal);
+}
+
+.about__value h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.about__value p {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* ============================================
+   MENU CATEGORIES
+   ============================================ */
+
+.menu {
+  background: var(--cream);
+  position: relative;
+}
+
+.menu__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-5);
+}
+
+.menu-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--duration-normal) var(--ease-out);
+  position: relative;
+  group: true;
+}
+
+.menu-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+}
+
+.menu-card__image {
+  position: relative;
+  height: 260px;
+  overflow: hidden;
+}
+
+.menu-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s var(--ease-out);
+}
+
+.menu-card:hover .menu-card__image img {
+  transform: scale(1.08);
+}
+
+.menu-card__image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(15, 26, 46, 0.7), transparent 60%);
+}
+
+.menu-card__badge {
+  position: absolute;
+  top: var(--space-4);
+  left: var(--space-4);
+}
+
+.menu-card__body {
+  padding: var(--space-5);
+}
+
+.menu-card__title {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: var(--space-2);
+  color: var(--navy);
+}
+
+.menu-card__desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: var(--space-4);
+}
+
+.menu-card__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.menu-card__item {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  padding: 4px 12px;
+  background: var(--cream);
+  border-radius: var(--radius-full);
+}
+
+/* ============================================
+   FEATURES SECTION
+   ============================================ */
+
+.features {
+  background: var(--navy-deep);
+  position: relative;
+  overflow: hidden;
+}
+
+.features__bg-pattern {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(0, 180, 216, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 50%, rgba(245, 166, 35, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.features .section-intro h2,
+.features .section-intro p {
+  color: var(--text-on-dark);
+}
+
+.features .section-intro p {
+  color: var(--text-on-dark-muted);
+}
+
+.features__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-5);
+}
+
+.feature-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  transition: all var(--duration-normal) var(--ease-out);
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0, 180, 216, 0.05), rgba(245, 166, 35, 0.05));
+  opacity: 0;
+  transition: opacity var(--duration-normal) var(--ease-out);
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(0, 180, 216, 0.2);
+  background: rgba(255,255,255,0.05);
+}
+
+.feature-card:hover::before {
+  opacity: 1;
+}
+
+.feature-card__icon {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-5);
+  position: relative;
+  z-index: 1;
+}
+
+.feature-card__icon--teal {
+  background: rgba(0, 180, 216, 0.12);
+}
+
+.feature-card__icon--orange {
+  background: rgba(245, 166, 35, 0.12);
+}
+
+.feature-card__icon svg {
+  width: 26px;
+  height: 26px;
+}
+
+.feature-card__icon--teal svg {
+  color: var(--teal-light);
+}
+
+.feature-card__icon--orange svg {
+  color: var(--orange-light);
+}
+
+.feature-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: var(--space-3);
+  position: relative;
+  z-index: 1;
+}
+
+.feature-card p {
+  font-size: 0.9rem;
+  color: var(--text-on-dark-muted);
+  line-height: 1.7;
+  position: relative;
+  z-index: 1;
+}
+
+/* ============================================
+   LOYALTY SECTION
+   ============================================ */
+
+.loyalty {
+  background: var(--cream-light);
+  overflow: hidden;
+}
+
+.loyalty__card {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-deep) 100%);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-8);
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+}
+
+.loyalty__card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(0, 180, 216, 0.1), transparent 70%);
+  pointer-events: none;
+}
+
+.loyalty__card::after {
+  content: '';
+  position: absolute;
+  bottom: -30%;
+  left: -10%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(245, 166, 35, 0.08), transparent 70%);
+  pointer-events: none;
+}
+
+.loyalty__content {
+  position: relative;
+  z-index: 1;
+}
+
+.loyalty__content .eyebrow {
+  color: var(--teal-light);
+}
+
+.loyalty__content .eyebrow::before {
+  background: var(--teal-light);
+}
+
+.loyalty__content h2 {
+  color: var(--white);
+  margin-bottom: var(--space-4);
+}
+
+.loyalty__content p {
+  color: var(--text-on-dark-muted);
+  margin-bottom: var(--space-6);
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.loyalty__steps {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.loyalty__step {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.loyalty__step-num {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(0, 180, 216, 0.15);
+  border: 1px solid rgba(0, 180, 216, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--teal-light);
+  flex-shrink: 0;
+}
+
+.loyalty__step-text {
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.85);
+}
+
+.loyalty__step-text strong {
+  color: var(--white);
+}
+
+.loyalty__visual {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.loyalty__punch-card {
+  background: linear-gradient(145deg, var(--cream-light) 0%, var(--cream) 100%);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  width: 100%;
+  max-width: 360px;
+  box-shadow: var(--shadow-xl);
+  position: relative;
+  transform: rotate(2deg);
+  transition: transform var(--duration-normal) var(--ease-out);
+}
+
+.loyalty__punch-card:hover {
+  transform: rotate(0deg) scale(1.02);
+}
+
+.loyalty__punch-card-header {
+  text-align: center;
+  margin-bottom: var(--space-5);
+}
+
+.loyalty__punch-card-header img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0 auto var(--space-3);
+  object-fit: cover;
+}
+
+.loyalty__punch-card-header h4 {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--navy);
+  margin-bottom: 2px;
+}
+
+.loyalty__punch-card-header p {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.loyalty__punches {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-3);
+  margin-bottom: var(--space-5);
+}
+
+.loyalty__punch {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 2px dashed var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  transition: all var(--duration-normal) var(--ease-out);
+}
+
+.loyalty__punch.filled {
+  border: 2px solid var(--teal);
+  background: var(--teal-glow);
+  color: var(--teal);
+}
+
+.loyalty__punch.filled svg {
+  width: 18px;
+  height: 18px;
+}
+
+.loyalty__punch-reward {
+  text-align: center;
+  padding: var(--space-4);
+  background: linear-gradient(135deg, var(--orange-glow), rgba(245, 166, 35, 0.05));
+  border-radius: var(--radius-md);
+  border: 1px dashed var(--orange);
+}
+
+.loyalty__punch-reward p {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--orange-dark);
+}
+
+.loyalty__punch-reward span {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  display: block;
+  margin-top: 2px;
+}
+
+/* ============================================
+   COMMUNITY SECTION
+   ============================================ */
+
+.community {
+  background: var(--cream);
+  overflow: hidden;
+}
+
+.community__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+}
+
+.community-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: all var(--duration-normal) var(--ease-out);
+}
+
+.community-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
+}
+
+.community-card__image {
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.community-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s var(--ease-out);
+}
+
+.community-card:hover .community-card__image img {
+  transform: scale(1.05);
+}
+
+.community-card__image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(15, 26, 46, 0.5), transparent 50%);
+}
+
+.community-card__body {
+  padding: var(--space-6);
+}
+
+.community-card__body h3 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: var(--space-3);
+}
+
+.community-card__body p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: var(--space-4);
+}
+
+/* Community Photos */
+.community__photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+  margin-top: var(--space-7);
+}
+
+.community__photo {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  height: 220px;
+  position: relative;
+  box-shadow: var(--shadow-md);
+  transition: all var(--duration-normal) var(--ease-out);
+}
+
+.community__photo:hover {
+  transform: scale(1.03);
+  box-shadow: var(--shadow-xl);
+}
+
+.community__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s var(--ease-out);
+}
+
+.community__photo:hover img {
+  transform: scale(1.08);
+}
+
+/* ============================================
+   HOW TO ORDER / CTA SECTION
+   ============================================ */
+
+.order-cta {
+  background: var(--cream-light);
+  position: relative;
+  overflow: hidden;
+}
+
+.order-cta__inner {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+  border-radius: var(--radius-xl);
+  padding: var(--space-9) var(--space-8);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+}
+
+.order-cta__inner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 30% 20%, rgba(0, 180, 216, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 70% 80%, rgba(245, 166, 35, 0.08) 0%, transparent 50%);
+}
+
+.order-cta__content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.order-cta__content .eyebrow {
+  color: var(--teal-light);
+  justify-content: center;
+}
+
+.order-cta__content .eyebrow::before {
+  background: var(--teal-light);
+}
+
+.order-cta__content h2 {
+  color: var(--white);
+  margin-bottom: var(--space-4);
+}
+
+.order-cta__content p {
+  color: var(--text-on-dark-muted);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: var(--space-7);
+}
+
+.order-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+  margin-bottom: var(--space-8);
+}
+
+.order-step {
+  text-align: center;
+}
+
+.order-step__num {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(0, 180, 216, 0.1);
+  border: 2px solid rgba(0, 180, 216, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-4);
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--teal-light);
+}
+
+.order-step h4 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: var(--space-2);
+}
+
+.order-step p {
+  font-size: 0.85rem;
+  color: var(--text-on-dark-muted);
+  line-height: 1.6;
+}
+
+/* ============================================
+   FIND US / MAP
+   ============================================ */
+
+.find-us {
+  background: var(--cream);
+}
+
+.find-us__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-7);
+  align-items: start;
+}
+
+.find-us__map {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  height: 460px;
+  position: relative;
+}
+
+.find-us__map iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.find-us__info {
+  padding: var(--space-4) 0;
+}
+
+.find-us__detail {
+  display: flex;
+  gap: var(--space-4);
+  padding: var(--space-5) 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.find-us__detail:last-child {
+  border-bottom: none;
+}
+
+.find-us__detail-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.find-us__detail-icon svg {
+  width: 22px;
+  height: 22px;
+  color: var(--teal);
+}
+
+.find-us__detail h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.find-us__detail p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.find-us__detail a {
+  color: var(--teal);
+  font-weight: 600;
+}
+
+.find-us__detail a:hover {
+  color: var(--teal-dark);
+}
+
+.find-us__hours-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px var(--space-4);
+  margin-top: var(--space-2);
+}
+
+.find-us__hours-day {
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--text-primary);
+}
+
+.find-us__hours-time {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.find-us__hours-time.closed {
+  color: var(--text-muted);
+}
+
+/* ============================================
+   HIRING SECTION
+   ============================================ */
+
+.hiring {
+  background: var(--navy-deep);
+  position: relative;
+  overflow: hidden;
+}
+
+.hiring__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-8);
+  align-items: center;
+}
+
+.hiring__content {
+  position: relative;
+  z-index: 1;
+}
+
+.hiring__content .eyebrow {
+  color: var(--orange-light);
+}
+
+.hiring__content .eyebrow::before {
+  background: var(--orange-light);
+}
+
+.hiring__content h2 {
+  color: var(--white);
+  margin-bottom: var(--space-4);
+}
+
+.hiring__content p {
+  color: var(--text-on-dark-muted);
+  font-size: 1.05rem;
+  line-height: 1.75;
+  margin-bottom: var(--space-6);
+}
+
+.hiring__perks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+
+.hiring__perk {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.8);
+}
+
+.hiring__perk svg {
+  width: 18px;
+  height: 18px;
+  color: var(--teal-light);
+  flex-shrink: 0;
+}
+
+.hiring__image {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+  position: relative;
+}
+
+.hiring__image img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+.hiring__image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(15, 26, 46, 0.3), transparent 40%);
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+.footer {
+  background: var(--navy-deep);
+  color: var(--text-on-dark);
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.footer__main {
+  padding: var(--space-8) 0;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: var(--space-7);
+}
+
+.footer__brand {
+  max-width: 320px;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-5);
+}
+
+.footer__logo img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255,255,255,0.15);
+}
+
+.footer__logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__logo-name {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--white);
+}
+
+.footer__logo-tagline {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--teal-light);
+}
+
+.footer__brand p {
+  font-size: 0.9rem;
+  color: var(--text-on-dark-muted);
+  line-height: 1.7;
+  margin-bottom: var(--space-5);
+}
+
+.footer__social {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.footer__social a {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--duration-fast) var(--ease-out);
+}
+
+.footer__social a:hover {
+  background: var(--teal);
+  transform: translateY(-2px);
+}
+
+.footer__social a svg {
+  width: 18px;
+  height: 18px;
+  color: var(--text-on-dark-muted);
+}
+
+.footer__social a:hover svg {
+  color: var(--white);
+}
+
+.footer__col h4 {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: var(--space-4);
+}
+
+.footer__col ul li {
+  margin-bottom: var(--space-2);
+}
+
+.footer__col ul li a {
+  font-size: 0.88rem;
+  color: var(--text-on-dark-muted);
+  transition: all var(--duration-fast) var(--ease-out);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.footer__col ul li a:hover {
+  color: var(--teal-light);
+  transform: translateX(3px);
+}
+
+.footer__bottom {
+  padding: var(--space-5) 0;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.footer__bottom p {
+  font-size: 0.8rem;
+  color: var(--text-on-dark-muted);
+}
+
+.footer__bottom-links {
+  display: flex;
+  gap: var(--space-5);
+}
+
+.footer__bottom-links a {
+  font-size: 0.8rem;
+  color: var(--text-on-dark-muted);
+}
+
+.footer__bottom-links a:hover {
+  color: var(--teal-light);
+}
+
+/* ============================================
+   BACK TO TOP
+   ============================================ */
+
+.back-to-top {
+  position: fixed;
+  bottom: var(--space-6);
+  right: var(--space-6);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-lg);
+  z-index: 900;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: all var(--duration-normal) var(--ease-out);
+  border: 2px solid rgba(0, 180, 216, 0.2);
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  pointer-events: all;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  background: var(--teal);
+  border-color: var(--teal);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-glow-teal);
+}
+
+.back-to-top svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* ============================================
+   SPECIAL IMAGE TREATMENT — SHOWCASE STRIP
+   ============================================ */
+
+.showcase {
+  background: var(--navy-deep);
+  padding: var(--space-7) 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.showcase__track {
+  display: flex;
+  gap: var(--space-4);
+  animation: scrollShowcase 30s linear infinite;
+  width: fit-content;
+}
+
+.showcase__item {
+  flex-shrink: 0;
+  width: 300px;
+  height: 220px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  position: relative;
+}
+
+.showcase__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.85) saturate(1.1);
+  transition: filter 0.4s;
+}
+
+.showcase__item:hover img {
+  filter: brightness(1) saturate(1.2);
+}
+
+.showcase__fade-left,
+.showcase__fade-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 120px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.showcase__fade-left {
+  left: 0;
+  background: linear-gradient(to right, var(--navy-deep), transparent);
+}
+
+.showcase__fade-right {
+  right: 0;
+  background: linear-gradient(to left, var(--navy-deep), transparent);
+}
+
+@keyframes scrollShowcase {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ============================================
+   COFFEE / BEANSHOOTER HIGHLIGHT
+   ============================================ */
+
+.coffee-highlight {
+  background: var(--cream-light);
+  position: relative;
+  overflow: hidden;
+}
+
+.coffee-highlight__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-8);
+  align-items: center;
+}
+
+.coffee-highlight__image {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+  position: relative;
+  height: 450px;
+}
+
+.coffee-highlight__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s var(--ease-out);
+}
+
+.coffee-highlight__image:hover img {
+  transform: scale(1.03);
+}
+
+.coffee-highlight__content h2 {
+  margin-bottom: var(--space-4);
+}
+
+.coffee-highlight__content p {
+  color: var(--text-secondary);
+  line-height: 1.75;
+  margin-bottom: var(--space-4);
+}
+
+.coffee-highlight__content blockquote {
+  border-left: 3px solid var(--orange);
+  padding-left: var(--space-5);
+  margin: var(--space-6) 0;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--navy);
+  line-height: 1.5;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 1024px) {
+  .features__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer__main {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-6);
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --nav-height: 70px;
+  }
+
+  .section {
+    padding: var(--space-8) 0;
+  }
+
+  .section--lg {
+    padding: var(--space-9) 0;
+  }
+
+  /* Nav */
+  .nav__links {
+    display: none;
+  }
+
+  .nav__hamburger {
+    display: flex;
+  }
+
+  /* Hero */
+  .hero__content {
+    padding: calc(var(--nav-height) + var(--space-7)) 0 var(--space-9);
+  }
+
+  .hero__title {
+    font-size: clamp(2.6rem, 10vw, 4rem);
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero__actions .btn {
+    text-align: center;
+  }
+
+  .hero__scroll {
+    display: none;
+  }
+
+  /* Hours Ribbon */
+  .hours-ribbon__inner {
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .hours-ribbon__divider {
+    width: 60px;
+    height: 1px;
+  }
+
+  /* About */
+  .about__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  .about__img-float {
+    right: var(--space-4);
+    bottom: -20px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .about__values {
+    grid-template-columns: 1fr;
+  }
+
+  /* Menu */
+  .menu__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+  }
+
+  .menu-card__image {
+    height: 220px;
+  }
+
+  /* Features */
+  .features__grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Loyalty */
+  .loyalty__card {
+    grid-template-columns: 1fr;
+    padding: var(--space-6);
+  }
+
+  .loyalty__punch-card {
+    transform: none;
+  }
+
+  /* Community */
+  .community__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .community__photos {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .community__photo:last-child {
+    grid-column: span 2;
+    height: 200px;
+  }
+
+  /* Order CTA */
+  .order-cta__inner {
+    padding: var(--space-7) var(--space-5);
+  }
+
+  .order-steps {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+  }
+
+  /* Find Us */
+  .find-us__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .find-us__map {
+    height: 300px;
+  }
+
+  /* Hiring */
+  .hiring__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .hiring__perks {
+    grid-template-columns: 1fr;
+  }
+
+  .hiring__image {
+    order: -1;
+  }
+
+  .hiring__image img {
+    height: 300px;
+  }
+
+  /* Footer */
+  .footer__main {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Showcase */
+  .showcase__item {
+    width: 240px;
+    height: 180px;
+  }
+
+  /* Coffee */
+  .coffee-highlight__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .coffee-highlight__image {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__title {
+    font-size: 2.4rem;
+  }
+
+  .community__photos {
+    grid-template-columns: 1fr;
+  }
+
+  .community__photo:last-child {
+    grid-column: span 1;
+  }
+
+  .loyalty__punches {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-2);
+  }
+}
+
+/* ============================================
+   ACCESSIBILITY
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal, .reveal-left, .reveal-right, .reveal-scale {
+    opacity: 1;
+    transform: none;
+  }
+
+  .showcase__track {
+    animation: none;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+</style>
+</head>
+<body>
+
+<!-- ============================================
+     NAVIGATION
+     ============================================ -->
+<nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav__inner">
+    <a href="#hero" class="nav__logo" aria-label="Locals Diner — Home">
+      <img src="images/logo_tsp.jpeg" alt="Locals Diner Logo" width="52" height="52">
+      <div class="nav__logo-text">
+        <span class="nav__logo-name">Locals Diner</span>
+        <span class="nav__logo-tagline">Breakfast & Lunch</span>
+      </div>
+    </a>
+
+    <div class="nav__links">
+      <a href="#about" class="nav__link">About</a>
+      <a href="#menu" class="nav__link">Menu</a>
+      <a href="#features" class="nav__link">Features</a>
+      <a href="#loyalty" class="nav__link">Rewards</a>
+      <a href="#community" class="nav__link">Community</a>
+      <a href="#find-us" class="nav__link">Find Us</a>
+      <a href="tel:+19789574663" class="btn btn--primary btn--sm nav__cta">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call Now
+      </a>
+    </div>
+
+    <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="nav__mobile" id="mobileMenu" aria-hidden="true">
+    <a href="#about" class="nav__mobile-link">About</a>
+    <a href="#menu" class="nav__mobile-link">Menu</a>
+    <a href="#features" class="nav__mobile-link">Features</a>
+    <a href="#loyalty" class="nav__mobile-link">Rewards</a>
+    <a href="#community" class="nav__mobile-link">Community</a>
+    <a href="#find-us" class="nav__mobile-link">Find Us</a>
+    <a href="#hiring" class="nav__mobile-link">Careers</a>
+    <a href="tel:+19789574663" class="btn btn--primary btn--lg" style="margin-top:16px;">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      (978) 957-4663
+    </a>
+    <div class="nav__mobile-hours">
+      <p><strong>Wed – Sun</strong> 7:30 AM – 2:00 PM</p>
+      <p>Mon – Tue: Closed</p>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ============================================
+     HERO
+     ============================================ -->
+<section class="hero" id="hero">
+  <div class="hero__bg">
+    <img src="images/foodcollage.jpg" alt="Delicious food from Locals Diner" width="1920" height="1080">
+  </div>
+  <div class="hero__overlay"></div>
+  <div class="hero__deco hero__deco--teal"></div>
+  <div class="hero__deco hero__deco--orange"></div>
+
+  <div class="container hero__content">
+    <div class="hero__badge">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      Family-Owned · Est. 2024 · Dracut, MA
+    </div>
+
+    <h1 class="hero__title">
+      Where Locals<br>
+      Become <span class="accent-orange">Family</span>
+    </h1>
+
+    <p class="hero__subtitle">
+      Scratch-made breakfast &amp; lunch, served with heart in the soul of Dracut.
+      Great food, generous portions, and people who remember your name.
+    </p>
+
+    <div class="hero__actions">
+      <a href="#menu" class="btn btn--primary btn--lg">
+        Explore Our Menu
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#find-us" class="btn btn--secondary btn--lg">
+        Get Directions
+      </a>
+    </div>
+  </div>
+
+  <div class="hero__scroll">
+    <span>Scroll</span>
+    <div class="hero__scroll-line"></div>
+  </div>
+</section>
+
+
+<!-- ============================================
+     HOURS RIBBON
+     ============================================ -->
+<div class="hours-ribbon" id="hours">
+  <div class="container">
+    <div class="hours-ribbon__inner">
+      <div class="hours-ribbon__item">
+        <div class="hours-ribbon__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div class="hours-ribbon__text">
+          <div class="hours-ribbon__label">Open Hours</div>
+          <div class="hours-ribbon__value">Wed – Sun · 7:30 AM – 2:00 PM</div>
+        </div>
+      </div>
+
+      <div class="hours-ribbon__divider"></div>
+
+      <div class="hours-ribbon__item">
+        <div class="hours-ribbon__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div class="hours-ribbon__text">
+          <div class="hours-ribbon__label">Location</div>
+          <div class="hours-ribbon__value">1420 Lakeview Ave, Dracut, MA</div>
+        </div>
+      </div>
+
+      <div class="hours-ribbon__divider"></div>
+
+      <div class="hours-ribbon__item">
+        <div class="hours-ribbon__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <div class="hours-ribbon__text">
+          <div class="hours-ribbon__label">Call Us</div>
+          <div class="hours-ribbon__value"><a href="tel:+19789574663">(978) 957-4663</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ============================================
+     ABOUT / WELCOME
+     ============================================ -->
+<section class="section section--lg about" id="about">
+  <div class="container">
+    <div class="about__grid">
+      <div class="about__images reveal-left">
+        <div class="about__img-main">
+          <img src="images/diningroom.jpeg" alt="Locals Diner interior — warm and welcoming dining room" width="600" height="450" loading="lazy">
+        </div>
+        <div class="about__img-float">
+          <img src="images/counter.jpg" alt="The counter at Locals Diner" width="200" height="200" loading="lazy">
+        </div>
+        <div class="about__badge-float">
+          <span class="year">2024</span>
+          <span class="text">Established</span>
+        </div>
+      </div>
+
+      <div class="about__content reveal-right">
+        <span class="eyebrow">Our Story</span>
+        <h2 class="heading-lg">More Than a Diner.<br>It's <em>Home</em>.</h2>
+        <div class="divider"></div>
+        <p class="text-lg">
+          Locals Diner was born from a simple belief: a meal should feel like a warm hug from someone who genuinely cares. From the first cup of Beanshooter Coffee to the last bite of homemade pie, every detail is designed to make you feel like family.
+        </p>
+        <p>
+          We're a family-owned breakfast and lunch spot in the heart of Dracut, MA — and we take that seriously. Our portions are generous, our ingredients are fresh, and our smiles are always free. Whether you're a first-timer or a regular who has their "usual," you'll always leave satisfied.
+        </p>
+
+        <div class="about__values">
+          <div class="about__value reveal stagger-1">
+            <div class="about__value-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <div>
+              <h4>Made with Love</h4>
+              <p>Scratch-made recipes, every single day</p>
+            </div>
+          </div>
+
+          <div class="about__value reveal stagger-2">
+            <div class="about__value-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div>
+              <h4>Community First</h4>
+              <p>Built by neighbors, for neighbors</p>
+            </div>
+          </div>
+
+          <div class="about__value reveal stagger-3">
+            <div class="about__value-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <div>
+              <h4>Generous Portions</h4>
+              <p>You'll never leave hungry — guaranteed</p>
+            </div>
+          </div>
+
+          <div class="about__value reveal stagger-4">
+            <div class="about__value-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+            </div>
+            <div>
+              <h4>Beanshooter Coffee</h4>
+              <p>Premium local roast in every cup</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================
+     FOOD SHOWCASE STRIP
+     ============================================ -->
+<section class="showcase" aria-label="Food gallery">
+  <div class="showcase__fade-left"></div>
+  <div class="showcase__fade-right"></div>
+  <div class="showcase__track">
+    <div class="showcase__item"><img src="images/breakfast.jpg" alt="Breakfast plate" width="300" height="220" loading="lazy"></div>
+    <div class="showcase__item"><img src="images/pancake.png" alt="Fluffy pancakes" width="300" height="220" loading="lazy"></div>
+    <div class="showcase__item"><img src="images/breakfasttacos.jpg" alt="Breakfast tacos" width="300" height="220" loading="lazy"></div>
+    <div class="showcase__item"><img src="images/pies.jpg" alt="Homemade pies" width="300" height="220" loading="lazy"></div>
+    <div class="showcase__item"><img src="images/croquettes.jpg" alt="Lunch croquettes" width="300" height="220" loading="lazy"></div>
+    <div class="showcase__item"><img src="images/berries.jpg" alt="Fresh berries" width="300" height="220" loading="lazy"></div>
+    <div class="showcase__item"><img src="images/tacos.jpg" alt="Tacos" width="300" height="220" loading="lazy"></div>
+    <div class="showcase__item"><img src="images/beanshooter.jpg" alt="Beanshooter Coffee" width="300" height="220" loading="lazy"></div>
+    <!-- Duplicate for infinite scroll -->
+    <div class="showcase__item"><img src="images/breakfast.jpg" alt="Breakfast plate" width="300" height="220" loading="lazy"></div>
+    <div class="showcase__item"><img src="images/pancake.png" alt="Fluffy pancakes" width="300" height="220" loading="lazy"></div>
+    <div class="showcase__item"><img src="images/breakfasttacos.jpg" alt="Breakfast tacos" width="300" height="220" loading="lazy"></div>
+    <div class="showcase__item"><img src="images/pies.jpg" alt="Homemade pies" width="300" height="220" loading="lazy"></div>
+    <div class="showcase__item"><img src="images/croquettes.jpg" alt="Lunch croquettes" width="300" height="220" loading="lazy"></div>
+    <div class="showcase__item"><img src="images/berries.jpg" alt="Fresh berries" width="300" height="220" loading="lazy"></div>
+    <div class="showcase__item"><img src="images/tacos.jpg" alt="Tacos" width="300" height="220" loading="lazy"></div>
+    <div class="showcase__item"><img src="images/beanshooter.jpg" alt="Beanshooter Coffee" width="300" height="220" loading="lazy"></div>
+  </div>
+</section>
+
+
+<!-- ============================================
+     MENU CATEGORIES
+     ============================================ -->
+<section class="section section--lg menu" id="menu">
+  <div class="container">
+    <div class="section-intro centered reveal">
+      <span class="eyebrow">What We Serve</span>
+      <h2 class="heading-lg">Made From Scratch,<br>Served With Heart</h2>
+      <p class="text-lg">From sunrise classics to hearty lunch plates — every dish is crafted with fresh ingredients, generous portions, and a whole lot of love.</p>
+    </div>
+
+    <div class="menu__grid">
+      <!-- Breakfast -->
+      <div class="menu-card reveal stagger-1">
+        <div class="menu-card__image">
+          <img src="images/breakfast.jpg" alt="Classic breakfast plate with eggs, bacon, and toast" width="400" height="260" loading="lazy">
+          <div class="menu-card__image-overlay"></div>
+          <div class="menu-card__badge">
+            <span class="badge">Most Popular</span>
+          </div>
+        </div>
+        <div class="menu-card__body">
+          <h3 class="menu-card__title">Breakfast Classics</h3>
+          <p class="menu-card__desc">Rise and shine with our signature breakfast plates — fluffy eggs, crispy bacon, golden hash browns, and buttery toast.</p>
+          <div class="menu-card__items">
+            <span class="menu-card__item">Eggs Any Style</span>
+            <span class="menu-card__item">Omelets</span>
+            <span class="menu-card__item">French Toast</span>
+            <span class="menu-card__item">Benedicts</span>
+            <span class="menu-card__item">Hash</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pancakes & Waffles -->
+      <div class="menu-card reveal stagger-2">
+        <div class="menu-card__image">
+          <img src="images/pancake.png" alt="Stack of fluffy pancakes with syrup" width="400" height="260" loading="lazy">
+          <div class="menu-card__image-overlay"></div>
+          <div class="menu-card__badge">
+            <span class="badge badge--orange">Fan Favorite</span>
+          </div>
+        </div>
+        <div class="menu-card__body">
+          <h3 class="menu-card__title">Pancakes & More</h3>
+          <p class="menu-card__desc">Towering stacks of fluffy pancakes, crispy waffles, and sweet crepes — each one a masterpiece of comfort.</p>
+          <div class="menu-card__items">
+            <span class="menu-card__item">Buttermilk Pancakes</span>
+            <span class="menu-card__item">Waffles</span>
+            <span class="menu-card__item">Crepes</span>
+            <span class="menu-card__item">Toppings Galore</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tacos & Wraps -->
+      <div class="menu-card reveal stagger-3">
+        <div class="menu-card__image">
+          <img src="images/breakfasttacos.jpg" alt="Loaded breakfast tacos" width="400" height="260" loading="lazy">
+          <div class="menu-card__image-overlay"></div>
+        </div>
+        <div class="menu-card__body">
+          <h3 class="menu-card__title">Tacos & Wraps</h3>
+          <p class="menu-card__desc">Handheld perfection — from loaded breakfast tacos to hearty wraps packed with bold flavors.</p>
+          <div class="menu-card__items">
+            <span class="menu-card__item">Breakfast Tacos</span>
+            <span class="menu-card__item">Burritos</span>
+            <span class="menu-card__item">Wraps</span>
+            <span class="menu-card__item">Quesadillas</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lunch -->
+      <div class="menu-card reveal stagger-1">
+        <div class="menu-card__image">
+          <img src="images/croquettes.jpg" alt="Golden lunch croquettes" width="400" height="260" loading="lazy">
+          <div class="menu-card__image-overlay"></div>
+          <div class="menu-card__badge">
+            <span class="badge">11 AM Daily</span>
+          </div>
+        </div>
+        <div class="menu-card__body">
+          <h3 class="menu-card__title">Lunch Plates</h3>
+          <p class="menu-card__desc">Starting at 11 AM (except Sundays). Hearty sandwiches, crispy croquettes, and comfort-food specials.</p>
+          <div class="menu-card__items">
+            <span class="menu-card__item">Croquettes</span>
+            <span class="menu-card__item">Sandwiches</span>
+            <span class="menu-card__item">Burgers</span>
+            <span class="menu-card__item">Soups</span>
+            <span class="menu-card__item">Specials</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sweets -->
+      <div class="menu-card reveal stagger-2">
+        <div class="menu-card__image">
+          <img src="images/pies.jpg" alt="Homemade pies and baked goods" width="400" height="260" loading="lazy">
+          <div class="menu-card__image-overlay"></div>
+        </div>
+        <div class="menu-card__body">
+          <h3 class="menu-card__title">Homemade Sweets</h3>
+          <p class="menu-card__desc">Life is short — grab a slice of pie, a fresh pastry, or browse our shelves of goodies. All baked with love.</p>
+          <div class="menu-card__items">
+            <span class="menu-card__item">Pies</span>
+            <span class="menu-card__item">Pastries</span>
+            <span class="menu-card__item">Muffins</span>
+            <span class="menu-card__item">Shelves of Goodies</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coffee & Drinks -->
+      <div class="menu-card reveal stagger-3">
+        <div class="menu-card__image">
+          <img src="images/beanshooter.jpg" alt="Beanshooter Coffee served at Locals Diner" width="400" height="260" loading="lazy">
+          <div class="menu-card__image-overlay"></div>
+          <div class="menu-card__badge">
+            <span class="badge badge--orange">Local Roast</span>
+          </div>
+        </div>
+        <div class="menu-card__body">
+          <h3 class="menu-card__title">Coffee & Drinks</h3>
+          <p class="menu-card__desc">Proudly serving Beanshooter Coffee — a premium local roast that's the perfect start to any morning.</p>
+          <div class="menu-card__items">
+            <span class="menu-card__item">Beanshooter Coffee</span>
+            <span class="menu-card__item">Espresso</span>
+            <span class="menu-card__item">Fresh Juice</span>
+            <span class="menu-card__item">Hot Chocolate</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================
+     FEATURES
+     ============================================ -->
+<section class="section section--lg features" id="features">
+  <div class="features__bg-pattern"></div>
+  <div class="container">
+    <div class="section-intro centered reveal">
+      <span class="eyebrow eyebrow--light">The Locals Experience</span>
+      <h2 class="heading-lg">Not Just a Meal.<br>A <em>Memory</em>.</h2>
+      <p class="text-lg">Every visit is designed to surprise, delight, and leave you counting the days until your next one.</p>
+    </div>
+
+    <div class="features__grid">
+      <div class="feature-card reveal stagger-1">
+        <div class="feature-card__icon feature-card__icon--teal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+        </div>
+        <h3>Beanshooter Coffee</h3>
+        <p>Premium local roast, brewed to perfection. The kind of coffee that makes early mornings worth it — rich, smooth, and always fresh.</p>
+      </div>
+
+      <div class="feature-card reveal stagger-2">
+        <div class="feature-card__icon feature-card__icon--orange">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <h3>Nana's Corner</h3>
+        <p>A special little nook filled with warmth and memories. Nana's Corner is our tribute to the grandmothers who inspired our kitchen.</p>
+      </div>
+
+      <div class="feature-card reveal stagger-3">
+        <div class="feature-card__icon feature-card__icon--teal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Parties & Gatherings</h3>
+        <p>Celebrating something special? We host parties and private gatherings — birthdays, showers, reunions, or just because. Ask us about booking!</p>
+      </div>
+
+      <div class="feature-card reveal stagger-4">
+        <div class="feature-card__icon feature-card__icon--orange">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+        </div>
+        <h3>Shelves of Goodies</h3>
+        <p>Browse our shelves packed with homemade treats, local products, and surprise finds. Take a little piece of Locals home with you.</p>
+      </div>
+
+      <div class="feature-card reveal stagger-5">
+        <div class="feature-card__icon feature-card__icon--teal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </div>
+        <h3>Lottery & Keno</h3>
+        <p>Feeling lucky? We've got lottery and keno on-site. Grab your coffee, pick your numbers, and start your day with a little extra excitement.</p>
+      </div>
+
+      <div class="feature-card reveal stagger-6">
+        <div class="feature-card__icon feature-card__icon--orange">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <h3>Loyalty Rewards</h3>
+        <p>Our punch card program rewards regulars. Just 8 punches earns you $10 off — because loyalty should always be rewarded.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================
+     LOYALTY PROGRAM
+     ============================================ -->
+<section class="section section--lg loyalty" id="loyalty">
+  <div class="container">
+    <div class="loyalty__card reveal-scale">
+      <div class="loyalty__content">
+        <span class="eyebrow">Rewards Program</span>
+        <h2 class="heading-lg">Loyalty Has Its<br>Privileges</h2>
+        <p>We believe in rewarding the people who make us who we are — our regulars. Grab a loyalty card on your next visit and start earning toward your reward.</p>
+
+        <div class="loyalty__steps">
+          <div class="loyalty__step">
+            <div class="loyalty__step-num">1</div>
+            <div class="loyalty__step-text"><strong>Pick up</strong> your free Locals Loyalty Card</div>
+          </div>
+          <div class="loyalty__step">
+            <div class="loyalty__step-num">2</div>
+            <div class="loyalty__step-text"><strong>Earn a punch</strong> with every qualifying visit</div>
+          </div>
+          <div class="loyalty__step">
+            <div class="loyalty__step-num">3</div>
+            <div class="loyalty__step-text"><strong>Collect 8 punches</strong> and enjoy $10 off your meal</div>
+          </div>
+        </div>
+
+        <a href="#find-us" class="btn btn--primary btn--lg">
+          Visit Us to Get Started
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="loyalty__visual">
+        <div class="loyalty__punch-card">
+          <div class="loyalty__punch-card-header">
+            <img src="images/logo_tsp.jpeg" alt="Locals Diner Logo" width="60" height="60" loading="lazy">
+            <h4>Locals Loyalty Card</h4>
+            <p>Breakfast & Lunch Rewards</p>
+          </div>
+
+          <div class="loyalty__punches">
+            <div class="loyalty__punch filled">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="loyalty__punch filled">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="loyalty__punch filled">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="loyalty__punch filled">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="loyalty__punch filled">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="loyalty__punch">6</div>
+            <div class="loyalty__punch">7</div>
+            <div class="loyalty__punch">8</div>
+          </div>
+
+          <div class="loyalty__punch-reward">
+            <p>🎉 $10 OFF</p>
+            <span>Your next meal — on us!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================
+     COMMUNITY
+     ============================================ -->
+<section class="section section--lg community" id="community">
+  <div class="container">
+    <div class="section-intro centered reveal">
+      <span class="eyebrow">Community & Heart</span>
+      <h2 class="heading-lg">Built By Neighbors,<br>For <em>Neighbors</em></h2>
+      <p class="text-lg">Locals Diner isn't just a place to eat — it's a gathering place. A community hub. A second home where everyone belongs.</p>
+    </div>
+
+    <div class="community__grid">
+      <!-- Nana's Corner -->
+      <div class="community-card reveal-left">
+        <div class="community-card__image">
+          <img src="images/nanascorner.jpg" alt="Nana's Corner — a cozy tribute at Locals Diner" width="600" height="300" loading="lazy">
+          <div class="community-card__image-overlay"></div>
+        </div>
+        <div class="community-card__body">
+          <span class="badge badge--orange" style="margin-bottom: 12px;">Special Feature</span>
+          <h3>Nana's Corner</h3>
+          <p>Every family has a Nana who made the kitchen feel magical. Nana's Corner is our tribute — a warm, cozy space filled with vintage charm, old recipes, and the spirit of the grandmothers who taught us that food is love.</p>
+        </div>
+      </div>
+
+      <!-- Wall of Locals -->
+      <div class="community-card reveal-right">
+        <div class="community-card__image">
+          <img src="images/wall-of-locals.jpg" alt="The Wall of Locals — our community photo wall" width="600" height="300" loading="lazy">
+          <div class="community-card__image-overlay"></div>
+        </div>
+        <div class="community-card__body">
+          <span class="badge" style="margin-bottom: 12px;">Community Pride</span>
+          <h3>The Wall of Locals</h3>
+          <p>Our Wall of Locals celebrates the faces that fill our dining room every week. You're not just a customer here — you're family. Become a regular and earn your spot on the wall. It's our way of saying "you belong here."</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Community Photos -->
+    <div class="community__photos">
+      <div class="community__photo reveal stagger-1">
+        <img src="images/locals_fall.jpg" alt="Fall festivities at Locals Diner" width="400" height="220" loading="lazy">
+      </div>
+      <div class="community__photo reveal stagger-2">
+        <img src="images/happy.png" alt="Happy customers at Locals Diner" width="400" height="220" loading="lazy">
+      </div>
+      <div class="community__photo reveal stagger-3">
+        <img src="images/locals_pink.jpg" alt="Community event at Locals Diner" width="400" height="220" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================
+     HOW TO ORDER / CTA
+     ============================================ -->
+<section class="section section--lg order-cta" id="order">
+  <div class="container">
+    <div class="order-cta__inner reveal-scale">
+      <div class="order-cta__content">
+        <span class="eyebrow eyebrow--light">Visit Us</span>
+        <h2 class="heading-lg">Your Table<br>is Waiting</h2>
+        <p>No reservations needed. Walk in, grab a seat, and let us take care of the rest. Here's what to expect on your first visit.</p>
+
+        <div class="order-steps">
+          <div class="order-step reveal stagger-1">
+            <div class="order-step__num">1</div>
+            <h4>Walk In</h4>
+            <p>No reservations needed. Just show up hungry between 7:30 AM and 2:00 PM, Wed through Sun.</p>
+          </div>
+          <div class="order-step reveal stagger-2">
+            <div class="order-step__num">2</div>
+            <h4>Grab a Seat</h4>
+            <p>Counter, booth, or table — find your favorite spot. Our team will be right over with a smile and a menu.</p>
+          </div>
+          <div class="order-step reveal stagger-3">
+            <div class="order-step__num">3</div>
+            <h4>Enjoy Every Bite</h4>
+            <p>Fresh, scratch-made, and generous. Take your time, savor the flavors, and leave feeling like family.</p>
+          </div>
+        </div>
+
+        <div class="btn-group" style="justify-content:center;">
+          <a href="tel:+19789574663" class="btn btn--primary btn--lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call (978) 957-4663
+          </a>
+          <a href="#find-us" class="btn btn--secondary btn--lg">
+            Get Directions
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================
+     FIND US / MAP
+     ============================================ -->
+<section class="section section--lg find-us" id="find-us">
+  <div class="container">
+    <div class="section-intro reveal">
+      <span class="eyebrow">Find Us</span>
+      <h2 class="heading-lg">Come Say Hello</h2>
+      <p class="text-lg">We're right on Lakeview Ave in Dracut — easy to find, hard to forget. Stop by for the food, stay for the family.</p>
+    </div>
+
+    <div class="find-us__grid">
+      <div class="find-us__map reveal-left">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2939.5!2d-71.3015!3d42.6831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3a3a3a3a3a3a3%3A0x0!2s1420+Lakeview+Ave%2C+Dracut%2C+MA+01826!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Locals Diner location on Google Maps">
+        </iframe>
+      </div>
+
+      <div class="find-us__info reveal-right">
+        <div class="find-us__detail">
+          <div class="find-us__detail-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <h4>Address</h4>
+            <p>1420 Lakeview Ave<br>Dracut, MA 01826</p>
+          </div>
+        </div>
+
+        <div class="find-us__detail">
+          <div class="find-us__detail-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div>
+            <h4>Phone</h4>
+            <p><a href="tel:+19789574663">(978) 957-4663</a></p>
+          </div>
+        </div>
+
+        <div class="find-us__detail">
+          <div class="find-us__detail-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div>
+            <h4>Hours</h4>
+            <div class="find-us__hours-grid">
+              <span class="find-us__hours-day">Monday</span>
+              <span class="find-us__hours-time closed">Closed</span>
+              <span class="find-us__hours-day">Tuesday</span>
+              <span class="find-us__hours-time closed">Closed</span>
+              <span class="find-us__hours-day">Wednesday</span>
+              <span class="find-us__hours-time">7:30 AM – 2:00 PM</span>
+              <span class="find-us__hours-day">Thursday</span>
+              <span class="find-us__hours-time">7:30 AM – 2:00 PM</span>
+              <span class="find-us__hours-day">Friday</span>
+              <span class="find-us__hours-time">7:30 AM – 2:00 PM</span>
+              <span class="find-us__hours-day">Saturday</span>
+              <span class="find-us__hours-time">7:30 AM – 2:00 PM</span>
+              <span class="find-us__hours-day">Sunday</span>
+              <span class="find-us__hours-time">7:30 AM – 2:00 PM *</span>
+            </div>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 8px;">* Sundays: Breakfast only (no lunch)</p>
+          </div>
+        </div>
+
+        <div class="find-us__detail">
+          <div class="find-us__detail-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </div>
+          <div>
+            <h4>Follow Us</h4>
+            <p><a href="https://facebook.com/localsdiner" target="_blank" rel="noopener noreferrer">Facebook — @localsdiner</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================
+     HIRING
+     ============================================ -->
+<section class="section section--lg hiring" id="hiring">
+  <div class="container">
+    <div class="hiring__inner">
+      <div class="hiring__content reveal-left">
+        <span class="eyebrow eyebrow--orange">Now Hiring</span>
+        <h2 class="heading-lg" style="color: var(--white);">Join the<br>Locals Family</h2>
+        <div class="divider" style="background: linear-gradient(90deg, var(--orange), var(--teal));"></div>
+        <p>We're always looking for friendly, hardworking people who love food and community. If you want to be part of something special — a team that feels like family — we want to hear from you.</p>
+
+        <div class="hiring__perks">
+          <div class="hiring__perk">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Flexible scheduling
+          </div>
+          <div class="hiring__perk">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Family atmosphere
+          </div>
+          <div class="hiring__perk">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Meal benefits
+          </div>
+          <div class="hiring__perk">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Growth opportunities
+          </div>
+          <div class="hiring__perk">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            No late nights
+          </div>
+          <div class="hiring__perk">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Great tips
+          </div>
+        </div>
+
+        <div class="btn-group">
+          <a href="tel:+19789574663" class="btn btn--primary btn--lg">
+            Call to Apply
+          </a>
+          <a href="#find-us" class="btn btn--secondary btn--lg" style="border-color: rgba(255,255,255,0.2); color: var(--white);">
+            Stop By In Person
+          </a>
+        </div>
+      </div>
+
+      <div class="hiring__image reveal-right">
+        <img src="images/happy.png" alt="The happy team at Locals Diner" width="600" height="450" loading="lazy">
+        <div class="hiring__image-overlay"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================
+     FOOTER
+     ============================================ -->
+<footer class="footer" id="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__main">
+      <!-- Brand Column -->
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <img src="images/logo_tsp.jpeg" alt="Locals Diner" width="56" height="56" loading="lazy">
+          <div class="footer__logo-text">
+            <span class="footer__logo-name">Locals Diner</span>
+            <span class="footer__logo-tagline">Breakfast & Lunch · Dracut, MA</span>
+          </div>
+        </div>
+        <p>Where Locals Become Family. Scratch-made breakfast &amp; lunch served with heart in the soul of Dracut. Great Food&nbsp;•&nbsp;Great Portions&nbsp;•&nbsp;Great People.</p>
+        <div class="footer__social">
+          <a href="https://facebook.com/localsdiner" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer__col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#menu">Our Menu</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#loyalty">Loyalty Rewards</a></li>
+          <li><a href="#community">Community</a></li>
+        </ul>
+      </div>
+
+      <!-- Visit -->
+      <div class="footer__col">
+        <h4>Visit</h4>
+        <ul>
+          <li><a href="#find-us">Find Us</a></li>
+          <li><a href="#hours">Hours</a></li>
+          <li><a href="#order">How to Order</a></li>
+          <li><a href="#hiring">Careers</a></li>
+          <li><a href="tel:+19789574663">Call Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <ul>
+          <li>
+            <a href="tel:+19789574663">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.94.36 1.86.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.95.34 1.87.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              (978) 957-4663
+            </a>
+          </li>
+          <li>
+            <a href="https://maps.google.com/?q=1420+Lakeview+Ave,+Dracut,+MA+01826" target="_blank" rel="noopener noreferrer">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              1420 Lakeview Ave
+            </a>
+          </li>
+          <li>
+            <a href="https://facebook.com/localsdiner" target="_blank" rel="noopener noreferrer">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              @localsdiner
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; 2024 Locals Diner. All rights reserved. Made with ♥ in Dracut, MA.</p>
+      <div class="footer__bottom-links">
+        <span style="font-size: 0.8rem; color: var(--text-on-dark-muted);">Great Food &bull; Great Portions &bull; Great People</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ============================================
+     BACK TO TOP
+     ============================================ -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+
+
+<!-- ============================================
+     JAVASCRIPT
+     ============================================ -->
+<script>
+(function() {
+  'use strict';
+
+  // =========================================
+  // NAVIGATION — Scroll behavior
+  // =========================================
+  const nav = document.getElementById('nav');
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const backToTop = document.getElementById('backToTop');
+  let lastScroll = 0;
+
+  function handleNavScroll() {
+    const scrollY = window.scrollY;
+
+    // Add/remove scrolled class
+    if (scrollY > 80) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+
+    // Back to top button
+    if (scrollY > 600) {
+      backToTop.classList.add('visible');
+    } else {
+      backToTop.classList.remove('visible');
+    }
+
+    lastScroll = scrollY;
+  }
+
+  window.addEventListener('scroll', handleNavScroll, { passive: true });
+
+  // =========================================
+  // HAMBURGER MENU
+  // =========================================
+  hamburger.addEventListener('click', function() {
+    const isOpen = mobileMenu.classList.contains('open');
+
+    hamburger.classList.toggle('active');
+    mobileMenu.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', !isOpen);
+    mobileMenu.setAttribute('aria-hidden', isOpen);
+
+    // Prevent body scroll when menu is open
+    document.body.style.overflow = isOpen ? '' : 'hidden';
+  });
+
+  // Close mobile menu on link click
+  const mobileLinks = mobileMenu.querySelectorAll('a');
+  mobileLinks.forEach(function(link) {
+    link.addEventListener('click', function() {
+      hamburger.classList.remove('active');
+      mobileMenu.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      mobileMenu.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    });
+  });
+
+  // =========================================
+  // BACK TO TOP
+  // =========================================
+  backToTop.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // =========================================
+  // SCROLL REVEAL ANIMATIONS
+  // =========================================
+  const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+
+  function checkReveal() {
+    const windowHeight = window.innerHeight;
+    const triggerPoint = windowHeight * 0.88;
+
+    revealElements.forEach(function(el) {
+      const elementTop = el.getBoundingClientRect().top;
+
+      if (elementTop < triggerPoint) {
+        el.classList.add('revealed');
+      }
+    });
+  }
+
+  // Run on load and scroll
+  window.addEventListener('scroll', checkReveal, { passive: true });
+  window.addEventListener('resize', checkReveal, { passive: true });
+
+  // Initial check after a brief delay
+  setTimeout(checkReveal, 100);
+
+  // =========================================
+  // SMOOTH SCROLL FOR ANCHOR LINKS
+  // =========================================
+  document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+    anchor.addEventListener('click', function(e) {
+      const targetId = this.getAttribute('href');
+      if (targetId === '#') return;
+
+      const target = document.querySelector(targetId);
+      if (target) {
+        e.preventDefault();
+        const navHeight = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-height')) || 80;
+        const targetPosition = target.getBoundingClientRect().top + window.scrollY - navHeight;
+
+        window.scrollTo({
+          top: targetPosition,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+
+  // =========================================
+  // PARALLAX-LITE for Hero
+  // =========================================
+  const heroImg = document.querySelector('.hero__bg img');
+  if (heroImg) {
+    window.addEventListener('scroll', function() {
+      if (window.scrollY < window.innerHeight) {
+        heroImg.style.transform = 'scale(1.05) translateY(' + (window.scrollY * 0.15) + 'px)';
+      }
+    }, { passive: true });
+  }
+
+  // =========================================
+  // ACTIVE NAV LINK HIGHLIGHT
+  // =========================================
+  const sections = document.querySelectorAll('section[id], div[id]');
+  const navLinks = document.querySelectorAll('.nav__link');
+
+  function updateActiveNav() {
+    let current = '';
+    const navH = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-height')) || 80;
+
+    sections.forEach(function(section) {
+      const sectionTop = section.offsetTop - navH - 100;
+      if (window.scrollY >= sectionTop) {
+        current = section.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(function(link) {
+      link.style.color = '';
+      link.style.background = '';
+      if (link.getAttribute('href') === '#' + current) {
+        link.style.color = 'var(--white)';
+        link.style.background = 'rgba(0, 180, 216, 0.15)';
+      }
+    });
+  }
+
+  window.addEventListener('scroll', updateActiveNav, { passive: true });
+
+  // =========================================
+  // KEYBOARD ACCESSIBILITY — Escape to close menu
+  // =========================================
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
+      hamburger.classList.remove('active');
+      mobileMenu.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      mobileMenu.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      hamburger.focus();
+    }
+  });
+
+  // =========================================
+  // PERFORMANCE — Throttle scroll events
+  // =========================================
+  let ticking = false;
+
+  function onScroll() {
+    if (!ticking) {
+      window.requestAnimationFrame(function() {
+        handleNavScroll();
+        checkReveal();
+        updateActiveNav();
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }
+
+  // Replace the individual scroll listeners with one optimized one
+  window.removeEventListener('scroll', handleNavScroll);
+  window.removeEventListener('scroll', checkReveal);
+  window.removeEventListener('scroll', updateActiveNav);
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  // Initial calls
+  handleNavScroll();
+  checkReveal();
+  updateActiveNav();
+
+})();
+</script>
+
+</body>
+</html>
