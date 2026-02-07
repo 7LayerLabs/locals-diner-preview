@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photo Gallery - Food, Interior & Community | Locals Diner</title>
+<meta name="description" content="See Locals Diner in action - photos of our homemade food, cozy interior, and vibrant community in Dracut, MA.">
+<link rel="icon" type="image/jpeg" href="images/logo_tsp.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,400;1,9..144,500&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #1B2D4F; --navy-deep: #0F1A2E; --navy-light: #2A4270;
+  --teal: #00B4D8; --teal-light: #48CAE4; --teal-dark: #0096B7; --teal-glow: rgba(0,180,216,0.15);
+  --orange: #F5A623; --orange-light: #F7BC5C; --orange-dark: #E09010; --orange-glow: rgba(245,166,35,0.15);
+  --cream: #F5F0E8; --cream-dark: #E8E0D4; --cream-light: #FAF8F4; --white: #FFFFFF; --black: #0A0A0A;
+  --text-primary: #1B2D4F; --text-secondary: #5A6A80; --text-muted: #8A96A6; --text-on-dark: #F5F0E8; --text-on-dark-muted: rgba(245,240,232,0.7);
+  --border: rgba(27,45,79,0.1); --border-dark: rgba(245,240,232,0.15);
+  --font-display: 'Fraunces', Georgia, serif; --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px; --space-5: 24px; --space-6: 32px; --space-7: 48px; --space-8: 64px; --space-9: 96px; --space-10: 128px;
+  --container: 1200px; --container-narrow: 900px; --container-wide: 1400px;
+  --radius-sm: 8px; --radius-md: 12px; --radius-lg: 20px; --radius-xl: 32px; --radius-full: 9999px;
+  --shadow-sm: 0 1px 3px rgba(27,45,79,0.06), 0 1px 2px rgba(27,45,79,0.04);
+  --shadow-md: 0 4px 12px rgba(27,45,79,0.08), 0 2px 4px rgba(27,45,79,0.04);
+  --shadow-lg: 0 12px 40px rgba(27,45,79,0.12), 0 4px 12px rgba(27,45,79,0.06);
+  --shadow-xl: 0 24px 60px rgba(27,45,79,0.16), 0 8px 24px rgba(27,45,79,0.08);
+  --shadow-glow-teal: 0 0 30px rgba(0,180,216,0.3); --shadow-glow-orange: 0 0 30px rgba(245,166,35,0.3);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1); --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --duration-fast: 200ms; --duration-normal: 400ms; --duration-slow: 600ms;
+  --nav-height: 80px;
+}
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; scroll-padding-top: var(--nav-height); }
+body { font-family: var(--font-body); font-size: 16px; line-height: 1.7; color: var(--text-primary); background: var(--cream); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; text-decoration: none; transition: color var(--duration-fast) var(--ease-out); }
+button { font-family: inherit; cursor: pointer; border: none; background: none; }
+ul, ol { list-style: none; }
+h1,h2,h3,h4,h5,h6 { font-family: var(--font-display); font-weight: 700; line-height: 1.15; color: var(--text-primary); }
+.heading-lg { font-size: clamp(2.2rem,4.5vw,3.8rem); font-weight: 700; letter-spacing: -0.025em; line-height: 1.1; }
+.heading-md { font-size: clamp(1.5rem,3vw,2.2rem); font-weight: 600; letter-spacing: -0.02em; }
+.text-lg { font-size: clamp(1.05rem,1.5vw,1.25rem); line-height: 1.75; }
+.container { width: 100%; max-width: var(--container); margin: 0 auto; padding: 0 var(--space-5); }
+.section { padding: var(--space-9) 0; position: relative; }
+.section--lg { padding: var(--space-10) 0; }
+.eyebrow { font-family: var(--font-body); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--teal); display: inline-flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-4); }
+.eyebrow::before { content: ''; display: inline-block; width: 24px; height: 2px; background: var(--teal); border-radius: 2px; }
+.section-intro { max-width: 680px; margin-bottom: var(--space-8); }
+.section-intro.centered { margin-left: auto; margin-right: auto; text-align: center; }
+.section-intro.centered .eyebrow { justify-content: center; }
+.section-intro p { color: var(--text-secondary); margin-top: var(--space-4); }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2); font-family: var(--font-body); font-size: 0.9rem; font-weight: 600; padding: 14px 32px; border-radius: var(--radius-full); transition: all var(--duration-normal) var(--ease-out); position: relative; overflow: hidden; white-space: nowrap; }
+.btn--primary { background: var(--orange); color: var(--navy-deep); }
+.btn--primary:hover { transform: translateY(-2px); box-shadow: var(--shadow-glow-orange); }
+.btn--outline { background: transparent; color: var(--navy); border: 2px solid var(--navy); }
+.btn--outline:hover { background: var(--navy); color: var(--white); transform: translateY(-2px); }
+
+/* REVEAL ANIMATIONS */
+.reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out); }
+.reveal.revealed { opacity: 1; transform: translateY(0); }
+.stagger-1 { transition-delay: 0.1s; } .stagger-2 { transition-delay: 0.2s; } .stagger-3 { transition-delay: 0.3s; }
+
+/* NAV */
+.nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; height: var(--nav-height); display: flex; align-items: center; transition: all var(--duration-normal) var(--ease-out); background: rgba(15,26,46,0.97); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); box-shadow: 0 4px 30px rgba(0,0,0,0.15); }
+.nav__inner { display: flex; align-items: center; justify-content: space-between; width: 100%; max-width: var(--container-wide); margin: 0 auto; padding: 0 var(--space-5); }
+.nav__logo { display: flex; align-items: center; gap: var(--space-3); z-index: 1001; }
+.nav__logo img { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; border: 2px solid rgba(255,255,255,0.2); }
+.nav__logo-text { font-family: var(--font-display); font-size: 1.4rem; font-weight: 800; color: var(--white); }
+.nav__links { display: flex; align-items: center; gap: var(--space-6); }
+.nav__link { font-size: 0.95rem; font-weight: 500; color: rgba(255,255,255,0.8); transition: color var(--duration-fast) var(--ease-out); position: relative; }
+.nav__link:hover { color: var(--white); }
+.nav__link.active { color: var(--orange); }
+.nav__cta { background: var(--orange); color: var(--navy-deep); font-size: 0.9rem; font-weight: 600; padding: 12px 24px; border-radius: var(--radius-full); }
+.nav__cta:hover { background: var(--orange-light); transform: translateY(-1px); }
+
+.nav__mobile { display: none; flex-direction: column; gap: var(--space-2); cursor: pointer; z-index: 1001; }
+.nav__mobile span { width: 24px; height: 2px; background: var(--white); transition: all var(--duration-normal) var(--ease-out); border-radius: 2px; }
+.nav__mobile.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+.nav__mobile.active span:nth-child(2) { opacity: 0; }
+.nav__mobile.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+.nav__mobile-menu { position: fixed; inset: 0; background: var(--navy-deep); z-index: 999; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--space-6); transform: translateX(100%); transition: transform var(--duration-normal) var(--ease-out); }
+.nav__mobile-menu.open { transform: translateX(0); }
+.nav__mobile-menu .nav__link { font-size: 1.5rem; color: var(--white); }
+
+/* PAGE HERO */
+.page-hero { background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 40%, var(--navy-light) 100%); color: var(--text-on-dark); padding: calc(var(--nav-height) + var(--space-8)) 0 var(--space-9); position: relative; overflow: hidden; }
+.page-hero::before { content: ''; position: absolute; top: 0; right: -200px; width: 400px; height: 400px; background: radial-gradient(circle, rgba(0,180,216,0.06) 0%, transparent 70%); border-radius: 50%; }
+.page-hero::after { content: ''; position: absolute; bottom: -150px; left: -150px; width: 300px; height: 300px; background: radial-gradient(circle, rgba(245,166,35,0.04) 0%, transparent 70%); border-radius: 50%; }
+.page-hero__content { position: relative; z-index: 2; text-align: center; }
+.page-hero__title { color: var(--white); margin-bottom: var(--space-4); }
+.page-hero__subtitle { color: var(--text-on-dark-muted); max-width: 600px; margin: 0 auto; }
+
+/* GALLERY FILTERS */
+.gallery-filters { display: flex; justify-content: center; flex-wrap: wrap; gap: var(--space-3); margin-bottom: var(--space-8); }
+.filter-btn { padding: 12px 24px; border-radius: var(--radius-full); background: transparent; color: var(--text-secondary); font-weight: 500; border: 2px solid var(--border); transition: all var(--duration-normal) var(--ease-out); }
+.filter-btn:hover, .filter-btn.active { background: var(--teal); color: var(--white); border-color: var(--teal); transform: translateY(-2px); }
+
+/* GALLERY GRID */
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: var(--space-5); }
+.gallery-item { position: relative; border-radius: var(--radius-lg); overflow: hidden; aspect-ratio: 4/3; cursor: pointer; transition: all var(--duration-normal) var(--ease-out); }
+.gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform var(--duration-slow) var(--ease-out); }
+.gallery-item:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.gallery-item:hover img { transform: scale(1.05); }
+.gallery-item.hidden { display: none; }
+
+/* LIGHTBOX */
+.lightbox { position: fixed; inset: 0; background: rgba(0,0,0,0.95); z-index: 2000; display: flex; align-items: center; justify-content: center; opacity: 0; visibility: hidden; transition: all var(--duration-normal) var(--ease-out); }
+.lightbox.open { opacity: 1; visibility: visible; }
+.lightbox__content { position: relative; max-width: 90vw; max-height: 90vh; }
+.lightbox__image { max-width: 100%; max-height: 100%; object-fit: contain; border-radius: var(--radius-md); }
+.lightbox__close { position: absolute; top: -50px; right: 0; width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--white); font-size: 1.5rem; cursor: pointer; transition: background var(--duration-fast) var(--ease-out); }
+.lightbox__close:hover { background: rgba(255,255,255,0.2); }
+
+/* FOOTER */
+.footer { background: var(--navy-deep); color: var(--text-on-dark); padding: var(--space-9) 0 var(--space-6); }
+.footer__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--space-8); margin-bottom: var(--space-8); }
+.footer__brand { max-width: 350px; }
+.footer__logo { display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-5); }
+.footer__logo img { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; }
+.footer__logo-text { font-family: var(--font-display); font-size: 1.3rem; font-weight: 700; color: var(--white); }
+.footer__text { color: var(--text-on-dark-muted); line-height: 1.8; }
+.footer__section-title { font-size: 1rem; font-weight: 700; color: var(--white); margin-bottom: var(--space-4); }
+.footer__links { display: flex; flex-direction: column; gap: var(--space-3); }
+.footer__link { color: var(--text-on-dark-muted); font-size: 0.9rem; transition: color var(--duration-fast) var(--ease-out); }
+.footer__link:hover { color: var(--orange); }
+.footer__bottom { border-top: 1px solid var(--border-dark); padding-top: var(--space-6); text-align: center; color: var(--text-on-dark-muted); font-size: 0.85rem; }
+
+@media (max-width: 768px) {
+  .nav__links { display: none; }
+  .nav__mobile { display: flex; }
+  .gallery-grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-4); }
+  .gallery-filters { gap: var(--space-2); }
+  .filter-btn { padding: 10px 20px; font-size: 0.9rem; }
+}
+</style>
+</head>
+
+<body>
+<!-- NAV -->
+<nav class="nav">
+<div class="nav__inner">
+<a href="index.html" class="nav__logo">
+<img src="images/logo_tsp.jpeg" alt="Locals Diner" width="52" height="52">
+<span class="nav__logo-text">Locals</span>
+</a>
+<div class="nav__links">
+<a href="index.html" class="nav__link">Home</a>
+<a href="menu.html" class="nav__link">Menu</a>
+<a href="about.html" class="nav__link">About</a>
+<a href="community.html" class="nav__link">Community</a>
+<a href="gallery.html" class="nav__link active">Gallery</a>
+<a href="hiring.html" class="nav__link">Hiring</a>
+<a href="contact.html" class="nav__link">Contact</a>
+<a href="tel:9789574663" class="nav__cta">Call Now</a>
+</div>
+<button class="nav__mobile" id="navToggle">
+<span></span>
+<span></span>
+<span></span>
+</button>
+</div>
+<div class="nav__mobile-menu" id="navMobile">
+<a href="index.html" class="nav__link">Home</a>
+<a href="menu.html" class="nav__link">Menu</a>
+<a href="about.html" class="nav__link">About</a>
+<a href="community.html" class="nav__link">Community</a>
+<a href="gallery.html" class="nav__link">Gallery</a>
+<a href="hiring.html" class="nav__link">Hiring</a>
+<a href="contact.html" class="nav__link">Contact</a>
+<a href="tel:9789574663" class="nav__cta">Call Now</a>
+</div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+<div class="container">
+<div class="page-hero__content reveal">
+<h1 class="page-hero__title heading-lg">Gallery</h1>
+<p class="page-hero__subtitle text-lg">A peek inside Locals Diner — the food, the vibes, the community</p>
+</div>
+</div>
+</section>
+
+<!-- GALLERY -->
+<section class="section">
+<div class="container">
+<!-- FILTERS -->
+<div class="gallery-filters reveal">
+<button class="filter-btn active" data-filter="all">All Photos</button>
+<button class="filter-btn" data-filter="food">Food</button>
+<button class="filter-btn" data-filter="interior">Interior</button>
+<button class="filter-btn" data-filter="community">Community</button>
+</div>
+
+<!-- GALLERY GRID -->
+<div class="gallery-grid">
+<!-- FOOD PHOTOS -->
+<div class="gallery-item reveal stagger-1" data-category="food">
+<img src="images/breakfast.jpg" alt="Hearty breakfast plate" loading="lazy">
+</div>
+<div class="gallery-item reveal stagger-2" data-category="food">
+<img src="images/breakfasttacos.jpg" alt="Breakfast tacos" loading="lazy">
+</div>
+<div class="gallery-item reveal stagger-3" data-category="food">
+<img src="images/pancake.png" alt="Fluffy pancakes with syrup" loading="lazy">
+</div>
+<div class="gallery-item reveal stagger-1" data-category="food">
+<img src="images/pies.jpg" alt="Homemade pies" loading="lazy">
+</div>
+<div class="gallery-item reveal stagger-2" data-category="food">
+<img src="images/croquettes.jpg" alt="Golden croquettes" loading="lazy">
+</div>
+<div class="gallery-item reveal stagger-3" data-category="food">
+<img src="images/berries.jpg" alt="Fresh berries and cream" loading="lazy">
+</div>
+<div class="gallery-item reveal stagger-1" data-category="food">
+<img src="images/tacos.jpg" alt="Delicious tacos" loading="lazy">
+</div>
+<div class="gallery-item reveal stagger-2" data-category="food">
+<img src="images/foodcollage.jpg" alt="Food collage" loading="lazy">
+</div>
+<div class="gallery-item reveal stagger-3" data-category="food">
+<img src="images/beanshooter.jpg" alt="Beanshooter coffee" loading="lazy">
+</div>
+
+<!-- INTERIOR PHOTOS -->
+<div class="gallery-item reveal stagger-1" data-category="interior">
+<img src="images/counter.jpg" alt="Diner counter seating" loading="lazy">
+</div>
+<div class="gallery-item reveal stagger-2" data-category="interior">
+<img src="images/diningroom.jpeg" alt="Dining room interior" loading="lazy">
+</div>
+<div class="gallery-item reveal stagger-3" data-category="interior">
+<img src="images/1.png" alt="Interior view 1" loading="lazy">
+</div>
+<div class="gallery-item reveal stagger-1" data-category="interior">
+<img src="images/2.png" alt="Interior view 2" loading="lazy">
+</div>
+<div class="gallery-item reveal stagger-2" data-category="interior">
+<img src="images/3.png" alt="Interior view 3" loading="lazy">
+</div>
+
+<!-- COMMUNITY PHOTOS -->
+<div class="gallery-item reveal stagger-1" data-category="community">
+<img src="images/happy.png" alt="Happy customers" loading="lazy">
+</div>
+<div class="gallery-item reveal stagger-2" data-category="community">
+<img src="images/nanascorner.jpg" alt="Nana's Corner" loading="lazy">
+</div>
+<div class="gallery-item reveal stagger-3" data-category="community">
+<img src="images/wall-of-locals.jpg" alt="Wall of Locals community photos" loading="lazy">
+</div>
+<div class="gallery-item reveal stagger-1" data-category="community">
+<img src="images/locals_cancer.jpg" alt="Cancer awareness community event" loading="lazy">
+</div>
+<div class="gallery-item reveal stagger-2" data-category="community">
+<img src="images/locals_fall.jpg" alt="Fall community gathering" loading="lazy">
+</div>
+<div class="gallery-item reveal stagger-3" data-category="community">
+<img src="images/locals_pink.jpg" alt="Pink community support event" loading="lazy">
+</div>
+</div>
+</div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+<div class="lightbox__content">
+<button class="lightbox__close" id="lightboxClose">&times;</button>
+<img class="lightbox__image" id="lightboxImage" alt="">
+</div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+<div class="container">
+<div class="footer__grid">
+<div class="footer__brand">
+<div class="footer__logo">
+<img src="images/logo_tsp.jpeg" alt="Locals Diner" width="48" height="48">
+<span class="footer__logo-text">Locals Diner</span>
+</div>
+<p class="footer__text">Where Locals Become Family. Homemade breakfast & lunch in Dracut, MA. Great food, great portions, great people — since 2024.</p>
+</div>
+<div>
+<h3 class="footer__section-title">Menu</h3>
+<div class="footer__links">
+<a href="menu.html" class="footer__link">Breakfast</a>
+<a href="menu.html" class="footer__link">Lunch</a>
+<a href="menu.html" class="footer__link">Desserts & Pies</a>
+<a href="menu.html" class="footer__link">Beverages</a>
+</div>
+</div>
+<div>
+<h3 class="footer__section-title">About</h3>
+<div class="footer__links">
+<a href="about.html" class="footer__link">Our Story</a>
+<a href="community.html" class="footer__link">Community</a>
+<a href="gallery.html" class="footer__link">Photo Gallery</a>
+<a href="hiring.html" class="footer__link">Join the Team</a>
+</div>
+</div>
+<div>
+<h3 class="footer__section-title">Visit</h3>
+<div class="footer__links">
+<a href="contact.html" class="footer__link">Find Us</a>
+<a href="rewards.html" class="footer__link">Loyalty Program</a>
+<a href="tel:9789574663" class="footer__link">(978) 957-4663</a>
+<span class="footer__link">Wed–Sun: 7:30 AM – 2 PM</span>
+</div>
+</div>
+</div>
+<div class="footer__bottom">
+© 2024 Locals Diner. All rights reserved. • 1420 Lakeview Ave, Dracut, MA 01826
+</div>
+</div>
+</footer>
+
+<script>
+// Mobile nav toggle
+const navToggle = document.getElementById('navToggle');
+const navMobile = document.getElementById('navMobile');
+
+navToggle?.addEventListener('click', () => {
+navToggle.classList.toggle('active');
+navMobile.classList.toggle('open');
+document.body.style.overflow = navMobile.classList.contains('open') ? 'hidden' : '';
+});
+
+// Scroll reveals
+const revealElements = document.querySelectorAll('.reveal');
+const revealObserver = new IntersectionObserver((entries) => {
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+entry.target.classList.add('revealed');
+revealObserver.unobserve(entry.target);
+}
+});
+}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+revealElements.forEach(el => revealObserver.observe(el));
+
+// Gallery filtering
+const filterBtns = document.querySelectorAll('.filter-btn');
+const galleryItems = document.querySelectorAll('.gallery-item');
+
+filterBtns.forEach(btn => {
+btn.addEventListener('click', () => {
+const filter = btn.dataset.filter;
+filterBtns.forEach(b => b.classList.remove('active'));
+btn.classList.add('active');
+
+galleryItems.forEach(item => {
+if (filter === 'all' || item.dataset.category === filter) {
+item.classList.remove('hidden');
+} else {
+item.classList.add('hidden');
+}
+});
+});
+});
+
+// Lightbox
+const lightbox = document.getElementById('lightbox');
+const lightboxImage = document.getElementById('lightboxImage');
+const lightboxClose = document.getElementById('lightboxClose');
+
+galleryItems.forEach(item => {
+item.addEventListener('click', () => {
+const img = item.querySelector('img');
+lightboxImage.src = img.src;
+lightboxImage.alt = img.alt;
+lightbox.classList.add('open');
+document.body.style.overflow = 'hidden';
+});
+});
+
+lightboxClose?.addEventListener('click', closeLightbox);
+lightbox?.addEventListener('click', (e) => {
+if (e.target === lightbox) closeLightbox();
+});
+
+document.addEventListener('keydown', (e) => {
+if (e.key === 'Escape') closeLightbox();
+});
+
+function closeLightbox() {
+lightbox?.classList.remove('open');
+document.body.style.overflow = '';
+}
+</script>
+
+</body>
+</html>

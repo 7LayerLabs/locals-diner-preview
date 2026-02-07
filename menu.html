@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu - Breakfast, Lunch & Homemade Pies | Locals Diner</title>
+<meta name="description" content="Explore the full menu at Locals Diner — scratch-made breakfast, hearty lunch plates, homemade pies, and Beanshooter Coffee. Dracut, MA.">
+<link rel="icon" type="image/jpeg" href="images/logo_tsp.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,400;1,9..144,500&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #1B2D4F;
+  --navy-deep: #0F1A2E;
+  --navy-light: #2A4270;
+  --teal: #00B4D8;
+  --teal-light: #48CAE4;
+  --teal-dark: #0096B7;
+  --teal-glow: rgba(0, 180, 216, 0.15);
+  --orange: #F5A623;
+  --orange-light: #F7BC5C;
+  --orange-dark: #E09010;
+  --orange-glow: rgba(245, 166, 35, 0.15);
+  --cream: #F5F0E8;
+  --cream-dark: #E8E0D4;
+  --cream-light: #FAF8F4;
+  --white: #FFFFFF;
+  --black: #0A0A0A;
+  --text-primary: #1B2D4F;
+  --text-secondary: #5A6A80;
+  --text-muted: #8A96A6;
+  --text-on-dark: #F5F0E8;
+  --text-on-dark-muted: rgba(245, 240, 232, 0.7);
+  --border: rgba(27, 45, 79, 0.1);
+  --border-dark: rgba(245, 240, 232, 0.15);
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px; --space-5: 24px; --space-6: 32px; --space-7: 48px; --space-8: 64px; --space-9: 96px; --space-10: 128px;
+  --container: 1200px; --container-narrow: 900px; --container-wide: 1400px;
+  --radius-sm: 8px; --radius-md: 12px; --radius-lg: 20px; --radius-xl: 32px; --radius-full: 9999px;
+  --shadow-sm: 0 1px 3px rgba(27,45,79,0.06), 0 1px 2px rgba(27,45,79,0.04);
+  --shadow-md: 0 4px 12px rgba(27,45,79,0.08), 0 2px 4px rgba(27,45,79,0.04);
+  --shadow-lg: 0 12px 40px rgba(27,45,79,0.12), 0 4px 12px rgba(27,45,79,0.06);
+  --shadow-xl: 0 24px 60px rgba(27,45,79,0.16), 0 8px 24px rgba(27,45,79,0.08);
+  --shadow-glow-teal: 0 0 30px rgba(0,180,216,0.3);
+  --shadow-glow-orange: 0 0 30px rgba(245,166,35,0.3);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --duration-fast: 200ms; --duration-normal: 400ms; --duration-slow: 600ms;
+  --nav-height: 80px;
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; scroll-padding-top: var(--nav-height); }
+body { font-family: var(--font-body); font-size: 16px; line-height: 1.7; color: var(--text-primary); background: var(--cream); overflow-x: hidden; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; text-decoration: none; transition: color var(--duration-fast) var(--ease-out); }
+button { font-family: inherit; cursor: pointer; border: none; background: none; }
+ul, ol { list-style: none; }
+h1, h2, h3, h4, h5, h6 { font-family: var(--font-display); font-weight: 700; line-height: 1.15; color: var(--text-primary); }
+
+.heading-xl { font-size: clamp(2.8rem, 6vw, 5.5rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.05; }
+.heading-lg { font-size: clamp(2.2rem, 4.5vw, 3.8rem); font-weight: 700; letter-spacing: -0.025em; line-height: 1.1; }
+.heading-md { font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 600; letter-spacing: -0.02em; }
+.heading-sm { font-size: clamp(1.2rem, 2vw, 1.5rem); font-weight: 600; letter-spacing: -0.01em; }
+.text-lg { font-size: clamp(1.05rem, 1.5vw, 1.25rem); line-height: 1.75; }
+.text-body { font-size: 1rem; line-height: 1.7; }
+.text-sm { font-size: 0.875rem; line-height: 1.6; }
+
+.container { width: 100%; max-width: var(--container); margin: 0 auto; padding: 0 var(--space-5); }
+.container--narrow { max-width: var(--container-narrow); }
+.container--wide { max-width: var(--container-wide); }
+.section { padding: var(--space-9) 0; position: relative; }
+.section--lg { padding: var(--space-10) 0; }
+
+.eyebrow { font-family: var(--font-body); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--teal); display: inline-flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-4); }
+.eyebrow::before { content: ''; display: inline-block; width: 24px; height: 2px; background: var(--teal); border-radius: 2px; }
+.eyebrow--orange { color: var(--orange); }
+.eyebrow--orange::before { background: var(--orange); }
+.eyebrow--light { color: var(--teal-light); }
+.eyebrow--light::before { background: var(--teal-light); }
+
+.section-intro { max-width: 680px; margin-bottom: var(--space-8); }
+.section-intro.centered { margin-left: auto; margin-right: auto; text-align: center; }
+.section-intro .eyebrow { justify-content: inherit; }
+.section-intro.centered .eyebrow { justify-content: center; }
+.section-intro p { color: var(--text-secondary); margin-top: var(--space-4); }
+
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2); font-family: var(--font-body); font-size: 0.9rem; font-weight: 600; letter-spacing: 0.01em; padding: 14px 32px; border-radius: var(--radius-full); transition: all var(--duration-normal) var(--ease-out); position: relative; overflow: hidden; white-space: nowrap; }
+.btn::before { content: ''; position: absolute; inset: 0; border-radius: inherit; opacity: 0; transition: opacity var(--duration-fast) var(--ease-out); }
+.btn:hover::before { opacity: 1; }
+.btn--primary { background: var(--orange); color: var(--navy-deep); }
+.btn--primary::before { background: linear-gradient(135deg, var(--orange-light), var(--orange-dark)); }
+.btn--primary:hover { transform: translateY(-2px); box-shadow: var(--shadow-glow-orange); }
+.btn--secondary { background: transparent; color: var(--white); border: 2px solid rgba(255,255,255,0.3); }
+.btn--secondary:hover { border-color: var(--white); background: rgba(255,255,255,0.1); transform: translateY(-2px); }
+.btn--teal { background: var(--teal); color: var(--white); }
+.btn--teal::before { background: linear-gradient(135deg, var(--teal-light), var(--teal-dark)); }
+.btn--teal:hover { transform: translateY(-2px); box-shadow: var(--shadow-glow-teal); }
+.btn--outline { background: transparent; color: var(--navy); border: 2px solid var(--navy); }
+.btn--outline:hover { background: var(--navy); color: var(--white); transform: translateY(-2px); }
+.btn--lg { padding: 18px 42px; font-size: 1rem; }
+.btn--sm { padding: 10px 24px; font-size: 0.85rem; }
+.btn-group { display: flex; flex-wrap: wrap; gap: var(--space-4); align-items: center; }
+
+.divider { width: 60px; height: 3px; background: linear-gradient(90deg, var(--teal), var(--orange)); border-radius: 3px; margin: var(--space-5) 0; }
+.divider.centered { margin-left: auto; margin-right: auto; }
+
+.badge { display: inline-flex; align-items: center; gap: var(--space-2); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 6px 16px; border-radius: var(--radius-full); background: var(--teal-glow); color: var(--teal); }
+.badge--orange { background: var(--orange-glow); color: var(--orange-dark); }
+
+.reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out); }
+.reveal.revealed { opacity: 1; transform: translateY(0); }
+.reveal-left { opacity: 0; transform: translateX(-50px); transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out); }
+.reveal-left.revealed { opacity: 1; transform: translateX(0); }
+.reveal-right { opacity: 0; transform: translateX(50px); transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out); }
+.reveal-right.revealed { opacity: 1; transform: translateX(0); }
+.reveal-scale { opacity: 0; transform: scale(0.92); transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out); }
+.reveal-scale.revealed { opacity: 1; transform: scale(1); }
+.stagger-1 { transition-delay: 0.1s; } .stagger-2 { transition-delay: 0.2s; } .stagger-3 { transition-delay: 0.3s; } .stagger-4 { transition-delay: 0.4s; } .stagger-5 { transition-delay: 0.5s; } .stagger-6 { transition-delay: 0.6s; }
+
+/* NAV */
+.nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; height: var(--nav-height); display: flex; align-items: center; transition: all var(--duration-normal) var(--ease-out); background: rgba(15, 26, 46, 0.97); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); box-shadow: 0 4px 30px rgba(0,0,0,0.15); }
+.nav.scrolled { height: 70px; }
+.nav__inner { display: flex; align-items: center; justify-content: space-between; width: 100%; max-width: var(--container-wide); margin: 0 auto; padding: 0 var(--space-5); }
+.nav__logo { display: flex; align-items: center; gap: var(--space-3); z-index: 1001; }
+.nav__logo img { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; transition: transform var(--duration-normal) var(--ease-out); border: 2px solid rgba(255,255,255,0.2); }
+.nav.scrolled .nav__logo img { width: 44px; height: 44px; }
+.nav__logo:hover img { transform: rotate(-8deg) scale(1.05); }
+.nav__logo-text { display: flex; flex-direction: column; }
+.nav__logo-name { font-family: var(--font-display); font-size: 1.15rem; font-weight: 800; color: var(--white); letter-spacing: -0.01em; line-height: 1.1; }
+.nav__logo-tagline { font-size: 0.65rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--teal-light); line-height: 1; margin-top: 2px; }
+.nav__links { display: flex; align-items: center; gap: var(--space-1); }
+.nav__link { font-size: 0.85rem; font-weight: 500; color: rgba(255,255,255,0.8); padding: 8px 16px; border-radius: var(--radius-full); transition: all var(--duration-fast) var(--ease-out); position: relative; }
+.nav__link:hover, .nav__link.active { color: var(--white); background: rgba(255,255,255,0.08); }
+.nav__link.active { color: var(--white); background: rgba(0, 180, 216, 0.15); }
+.nav__cta { margin-left: var(--space-3); }
+.nav__hamburger { display: none; flex-direction: column; gap: 5px; padding: 8px; z-index: 1001; cursor: pointer; }
+.nav__hamburger span { display: block; width: 24px; height: 2px; background: var(--white); border-radius: 2px; transition: all var(--duration-normal) var(--ease-out); transform-origin: center; }
+.nav__hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+.nav__hamburger.active span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.nav__hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+.nav__mobile { position: fixed; inset: 0; background: var(--navy-deep); z-index: 999; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--space-4); opacity: 0; pointer-events: none; transition: opacity var(--duration-normal) var(--ease-out); }
+.nav__mobile.open { opacity: 1; pointer-events: all; }
+.nav__mobile a { font-family: var(--font-display); font-size: 1.8rem; font-weight: 600; color: var(--white); padding: 8px 20px; border-radius: var(--radius-md); transition: all var(--duration-fast) var(--ease-out); transform: translateY(20px); opacity: 0; }
+.nav__mobile.open a { transform: translateY(0); opacity: 1; }
+.nav__mobile a:nth-child(1) { transition-delay: 0.05s; } .nav__mobile a:nth-child(2) { transition-delay: 0.1s; } .nav__mobile a:nth-child(3) { transition-delay: 0.15s; } .nav__mobile a:nth-child(4) { transition-delay: 0.2s; } .nav__mobile a:nth-child(5) { transition-delay: 0.25s; } .nav__mobile a:nth-child(6) { transition-delay: 0.3s; } .nav__mobile a:nth-child(7) { transition-delay: 0.35s; } .nav__mobile a:nth-child(8) { transition-delay: 0.4s; }
+.nav__mobile a:hover { color: var(--teal-light); background: rgba(0,180,216,0.08); }
+.nav__mobile-hours { margin-top: var(--space-6); text-align: center; color: var(--text-on-dark-muted); font-size: 0.9rem; }
+.nav__mobile-hours strong { color: var(--orange); }
+
+/* PAGE HERO */
+.page-hero { position: relative; padding: calc(var(--nav-height) + var(--space-9)) 0 var(--space-9); background: var(--navy-deep); overflow: hidden; }
+.page-hero__bg { position: absolute; inset: 0; }
+.page-hero__bg img { width: 100%; height: 100%; object-fit: cover; object-position: center; filter: brightness(0.3) saturate(1.2); }
+.page-hero__overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(15,26,46,0.92) 0%, rgba(15,26,46,0.6) 50%, rgba(15,26,46,0.8) 100%); }
+.page-hero__content { position: relative; z-index: 2; max-width: 700px; }
+.page-hero__content .eyebrow { color: var(--teal-light); }
+.page-hero__content .eyebrow::before { background: var(--teal-light); }
+.page-hero__content h1 { color: var(--white); margin-bottom: var(--space-4); }
+.page-hero__content p { color: var(--text-on-dark-muted); font-size: 1.15rem; line-height: 1.7; }
+.page-hero__content .accent-orange { color: var(--orange); font-style: italic; }
+
+/* MENU TABS */
+.menu-tabs { display: flex; flex-wrap: wrap; gap: var(--space-2); justify-content: center; margin-bottom: var(--space-8); position: sticky; top: var(--nav-height); z-index: 50; background: var(--cream); padding: var(--space-4) 0; border-bottom: 1px solid var(--border); }
+.menu-tab { font-size: 0.85rem; font-weight: 600; padding: 10px 24px; border-radius: var(--radius-full); color: var(--text-secondary); background: var(--white); border: 1px solid var(--border); cursor: pointer; transition: all var(--duration-fast) var(--ease-out); text-decoration: none; }
+.menu-tab:hover, .menu-tab.active { background: var(--navy); color: var(--white); border-color: var(--navy); }
+
+/* MENU SECTIONS */
+.menu-section { margin-bottom: var(--space-8); scroll-margin-top: calc(var(--nav-height) + 80px); }
+.menu-section__header { margin-bottom: var(--space-6); }
+.menu-section__header h2 { font-family: var(--font-display); font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 700; color: var(--navy); margin-bottom: var(--space-2); }
+.menu-section__header p { color: var(--text-secondary); font-size: 0.95rem; }
+.menu-section__header .divider { margin: var(--space-3) 0 0; }
+
+/* MENU CATEGORY */
+.menu-category { margin-bottom: var(--space-6); }
+.menu-category h3 { font-family: var(--font-display); font-size: 1.3rem; font-weight: 700; color: var(--navy); margin-bottom: var(--space-4); display: flex; align-items: center; gap: var(--space-3); }
+.menu-category h3::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+/* MENU ITEMS */
+.menu-items { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: var(--space-4); }
+.menu-item { background: var(--white); border-radius: var(--radius-md); padding: var(--space-5); box-shadow: var(--shadow-sm); transition: all var(--duration-normal) var(--ease-out); border-left: 3px solid transparent; }
+.menu-item:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); border-left-color: var(--teal); }
+.menu-item__name { font-family: var(--font-display); font-size: 1.05rem; font-weight: 700; color: var(--navy); margin-bottom: 4px; }
+.menu-item__desc { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6; }
+
+/* MENU SIMPLE LIST */
+.menu-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: var(--space-2); }
+.menu-list-item { font-size: 0.95rem; color: var(--text-primary); padding: var(--space-3) var(--space-4); background: var(--white); border-radius: var(--radius-sm); display: flex; align-items: center; gap: var(--space-2); transition: all var(--duration-fast); }
+.menu-list-item:hover { background: var(--teal-glow); }
+.menu-list-item::before { content: '•'; color: var(--teal); font-weight: 700; font-size: 1.2rem; }
+
+/* MENU IMAGE BANNER */
+.menu-image-banner { border-radius: var(--radius-lg); overflow: hidden; margin: var(--space-6) 0; height: 250px; position: relative; box-shadow: var(--shadow-lg); }
+.menu-image-banner img { width: 100%; height: 100%; object-fit: cover; }
+.menu-image-banner__overlay { position: absolute; inset: 0; background: linear-gradient(to right, rgba(15,26,46,0.7), transparent 60%); display: flex; align-items: center; padding: var(--space-7); }
+.menu-image-banner__text { color: var(--white); }
+.menu-image-banner__text h3 { font-family: var(--font-display); font-size: 1.8rem; font-weight: 700; color: var(--white); margin-bottom: var(--space-2); }
+.menu-image-banner__text p { color: rgba(255,255,255,0.8); font-size: 1rem; }
+
+/* PIE CTA */
+.pie-cta { background: linear-gradient(135deg, var(--navy) 0%, var(--navy-deep) 100%); border-radius: var(--radius-xl); padding: var(--space-7); text-align: center; margin-top: var(--space-7); position: relative; overflow: hidden; box-shadow: var(--shadow-xl); }
+.pie-cta::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 30% 50%, rgba(245,166,35,0.1), transparent 60%); pointer-events: none; }
+.pie-cta h3 { font-family: var(--font-display); font-size: 1.8rem; font-weight: 700; color: var(--white); margin-bottom: var(--space-3); position: relative; z-index: 1; }
+.pie-cta p { color: var(--text-on-dark-muted); font-size: 1.05rem; margin-bottom: var(--space-5); position: relative; z-index: 1; }
+
+/* FOOTER */
+.footer { background: var(--navy-deep); color: var(--text-on-dark); border-top: 1px solid rgba(255,255,255,0.05); }
+.footer__main { padding: var(--space-8) 0; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: var(--space-7); }
+.footer__brand { max-width: 320px; }
+.footer__logo { display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-5); }
+.footer__logo img { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; border: 2px solid rgba(255,255,255,0.15); }
+.footer__logo-text { display: flex; flex-direction: column; }
+.footer__logo-name { font-family: var(--font-display); font-size: 1.2rem; font-weight: 800; color: var(--white); }
+.footer__logo-tagline { font-size: 0.65rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--teal-light); }
+.footer__brand p { font-size: 0.9rem; color: var(--text-on-dark-muted); line-height: 1.7; margin-bottom: var(--space-5); }
+.footer__social { display: flex; gap: var(--space-3); }
+.footer__social a { width: 42px; height: 42px; border-radius: 50%; background: rgba(255,255,255,0.06); display: flex; align-items: center; justify-content: center; transition: all var(--duration-fast) var(--ease-out); }
+.footer__social a:hover { background: var(--teal); transform: translateY(-2px); }
+.footer__social a svg { width: 18px; height: 18px; color: var(--text-on-dark-muted); }
+.footer__social a:hover svg { color: var(--white); }
+.footer__col h4 { font-family: var(--font-display); font-size: 1rem; font-weight: 700; color: var(--white); margin-bottom: var(--space-4); }
+.footer__col ul li { margin-bottom: var(--space-2); }
+.footer__col ul li a { font-size: 0.88rem; color: var(--text-on-dark-muted); transition: all var(--duration-fast) var(--ease-out); display: inline-flex; align-items: center; gap: var(--space-2); }
+.footer__col ul li a:hover { color: var(--teal-light); transform: translateX(3px); }
+.footer__bottom { padding: var(--space-5) 0; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-3); }
+.footer__bottom p { font-size: 0.8rem; color: var(--text-on-dark-muted); }
+
+.back-to-top { position: fixed; bottom: var(--space-6); right: var(--space-6); width: 48px; height: 48px; border-radius: 50%; background: var(--navy); color: var(--white); display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-lg); z-index: 900; opacity: 0; pointer-events: none; transform: translateY(10px); transition: all var(--duration-normal) var(--ease-out); border: 2px solid rgba(0,180,216,0.2); }
+.back-to-top.visible { opacity: 1; pointer-events: all; transform: translateY(0); }
+.back-to-top:hover { background: var(--teal); border-color: var(--teal); transform: translateY(-3px); box-shadow: var(--shadow-glow-teal); }
+.back-to-top svg { width: 20px; height: 20px; }
+
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+
+@media (max-width: 1024px) {
+  .footer__main { grid-template-columns: 1fr 1fr; gap: var(--space-6); }
+}
+@media (max-width: 768px) {
+  :root { --nav-height: 70px; }
+  .section { padding: var(--space-8) 0; }
+  .section--lg { padding: var(--space-9) 0; }
+  .nav__links { display: none; }
+  .nav__hamburger { display: flex; }
+  .menu-items { grid-template-columns: 1fr; }
+  .menu-list { grid-template-columns: 1fr; }
+  .menu-tabs { gap: var(--space-1); }
+  .menu-tab { font-size: 0.78rem; padding: 8px 16px; }
+  .menu-image-banner { height: 200px; }
+  .menu-image-banner__overlay { padding: var(--space-5); }
+  .menu-image-banner__text h3 { font-size: 1.4rem; }
+  .footer__main { grid-template-columns: 1fr; gap: var(--space-5); }
+  .footer__bottom { flex-direction: column; text-align: center; }
+}
+@media (max-width: 480px) {
+  .menu-items { grid-template-columns: 1fr; }
+  .menu-list { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  html { scroll-behavior: auto; }
+  .reveal, .reveal-left, .reveal-right, .reveal-scale { opacity: 1; transform: none; }
+}
+:focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; border-radius: 4px; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+</style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo" aria-label="Locals Diner — Home">
+      <img src="images/logo_tsp.jpeg" alt="Locals Diner Logo" width="52" height="52">
+      <div class="nav__logo-text">
+        <span class="nav__logo-name">Locals Diner</span>
+        <span class="nav__logo-tagline">Breakfast & Lunch</span>
+      </div>
+    </a>
+    <div class="nav__links">
+      <a href="about.html" class="nav__link">About</a>
+      <a href="menu.html" class="nav__link active">Menu</a>
+      <a href="rewards.html" class="nav__link">Rewards</a>
+      <a href="community.html" class="nav__link">Community</a>
+      <a href="gallery.html" class="nav__link">Gallery</a>
+      <a href="contact.html" class="nav__link">Find Us</a>
+      <a href="tel:+19789570065" class="btn btn--primary btn--sm nav__cta">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call Now
+      </a>
+    </div>
+    <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav__mobile" id="mobileMenu" aria-hidden="true">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="menu.html">Menu</a>
+    <a href="rewards.html">Rewards</a>
+    <a href="community.html">Community</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="hiring.html">Careers</a>
+    <a href="contact.html">Find Us</a>
+    <a href="tel:+19789570065" class="btn btn--primary btn--lg" style="margin-top:16px;">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      (978) 957-0065
+    </a>
+    <div class="nav__mobile-hours">
+      <p><strong>Wed – Sun</strong> 7:30 AM – 2:00 PM</p>
+      <p>Mon – Tue: Closed</p>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero__bg">
+    <img src="images/foodcollage.jpg" alt="Delicious food from Locals Diner" width="1920" height="600">
+  </div>
+  <div class="page-hero__overlay"></div>
+  <div class="container">
+    <div class="page-hero__content" style="animation: fadeInUp 0.8s var(--ease-out) 0.2s both;">
+      <span class="eyebrow eyebrow--light">Our Menu</span>
+      <h1 class="heading-xl">Made From Scratch,<br>Served With <span class="accent-orange">Heart</span></h1>
+      <p>From sunrise classics to hearty lunch plates — every dish crafted with fresh ingredients, generous portions, and a whole lot of love.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MENU CONTENT -->
+<section class="section section--lg" style="background: var(--cream);">
+  <div class="container">
+    <!-- Sticky Tabs -->
+    <div class="menu-tabs reveal">
+      <a href="#breakfast" class="menu-tab active">Breakfast</a>
+      <a href="#classics" class="menu-tab">Classics</a>
+      <a href="#sandwiches" class="menu-tab">Sandwiches</a>
+      <a href="#omelettes" class="menu-tab">Omelettes</a>
+      <a href="#benedicts" class="menu-tab">Benedicts</a>
+      <a href="#pancakes" class="menu-tab">Pancakes</a>
+      <a href="#french-toast" class="menu-tab">French Toast</a>
+      <a href="#waffles" class="menu-tab">Waffles</a>
+      <a href="#lunch" class="menu-tab">Lunch</a>
+      <a href="#desserts" class="menu-tab">Desserts</a>
+      <a href="#sides" class="menu-tab">Sides</a>
+      <a href="#beverages" class="menu-tab">Beverages</a>
+    </div>
+
+    <!-- ========== BREAKFAST FAVORITES ========== -->
+    <div class="menu-section reveal" id="breakfast">
+      <div class="menu-section__header">
+        <span class="eyebrow eyebrow--orange">Rise & Shine</span>
+        <h2>Breakfast Favorites</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item">
+          <div class="menu-item__name">The Original Belly Buster</div>
+          <div class="menu-item__desc">Three eggs with bacon & sausage, home fries, toast, and choice of pancakes or French toast</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__name">The Southerner</div>
+          <div class="menu-item__desc">Three eggs with choice of sausage or patties, home fries, and a buttermilk biscuit</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__name">Country Breakfast</div>
+          <div class="menu-item__desc">Three eggs served with bacon, country ham, sausage, home fries, and toast</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__name">Chicken & Biscuits</div>
+          <div class="menu-item__desc">Pan-fried chicken over a grilled biscuit with sausage gravy, two eggs, and home fries</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__name">Steak Tips & Eggs</div>
+          <div class="menu-item__desc">Marinated steak tips with home fries and toast</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE BANNER -->
+    <div class="menu-image-banner reveal-scale">
+      <img src="images/breakfast.jpg" alt="Classic breakfast at Locals Diner" loading="lazy">
+      <div class="menu-image-banner__overlay">
+        <div class="menu-image-banner__text">
+          <h3>Start Your Morning Right</h3>
+          <p>Every breakfast is made fresh to order</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== THE CLASSICS ========== -->
+    <div class="menu-section reveal" id="classics">
+      <div class="menu-section__header">
+        <h2>The Classics</h2>
+        <p>Two eggs any style with toast</p>
+        <div class="divider"></div>
+      </div>
+      <div class="menu-list">
+        <div class="menu-list-item">With Bacon or Sausage</div>
+        <div class="menu-list-item">With Kielbasa or Country Ham</div>
+        <div class="menu-list-item">With Corned Beef Hash</div>
+      </div>
+    </div>
+
+    <!-- ========== BREAKFAST SANDWICHES ========== -->
+    <div class="menu-section reveal" id="sandwiches">
+      <div class="menu-section__header">
+        <h2>Breakfast Sandwiches</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item">
+          <div class="menu-item__name">Egg & Cheese</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__name">Meat, Egg & Cheese</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__name">Western Sandwich</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__name">Croissant Sandwich</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__name">B.L.T.</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__name">Breakfast B.L.T.</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__name">The "Mill City" Sandwich</div>
+          <div class="menu-item__desc">Two eggs with cheese & bacon, ham, or sausage</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__name">Breakfast Burrito</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== OMELETTES ========== -->
+    <div class="menu-section reveal" id="omelettes">
+      <div class="menu-section__header">
+        <span class="eyebrow">Fluffy & Loaded</span>
+        <h2>Omelettes</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item">
+          <div class="menu-item__name">Cheese Omelet</div>
+          <div class="menu-item__desc">American, cheddar jack, mozzarella, feta, or Swiss</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__name">Classic Ham & Cheese</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__name">Sausage & Cheese</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__name">Corned Beef Hash & Cheese</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__name">Kielbasa & Cheese</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__name">Meat Lovers</div>
+          <div class="menu-item__desc">Ham, sausage, kielbasa, bacon</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__name">Mushroom & Cheese</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__name">Broccoli & Cheese</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__name">Veggie</div>
+          <div class="menu-item__desc">Mushrooms, onions, spinach, tomatoes, broccoli</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__name">The Chef's Special</div>
+          <div class="menu-item__desc">All meats & vegetables with cheese</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__name">Steak Bomb</div>
+          <div class="menu-item__desc">Peppers, onions, mushrooms, cheese</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__name">Greek</div>
+          <div class="menu-item__desc">Spinach, tomatoes, feta</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__name">Cheeseburger Scrambler</div>
+          <div class="menu-item__desc">Four eggs with hamburger, peppers, onions, mushrooms & cheddar</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== BENEDICTS ========== -->
+    <div class="menu-section reveal" id="benedicts">
+      <div class="menu-section__header">
+        <span class="eyebrow eyebrow--orange">Poached to Perfection</span>
+        <h2>Benedicts</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item">
+          <div class="menu-item__name">Egg Benny</div>
+          <div class="menu-item__desc">Two poached eggs, bacon/sausage/ham on toasted English with hollandaise</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__name">Irish Benny</div>
+          <div class="menu-item__desc">Two poached eggs with corned beef hash</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__name">Eggs Florentine</div>
+          <div class="menu-item__desc">Two poached eggs with spinach on English muffin with hollandaise</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__name">Steak Tip Benny</div>
+          <div class="menu-item__desc">Two poached eggs on steak tips with hollandaise</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__name">Country Benny</div>
+          <div class="menu-item__desc">Two poached eggs on grilled biscuit with sausage patties & sausage gravy</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__name">Benny Omelet</div>
+          <div class="menu-item__desc">Four eggs with diced ham or bacon layered with hollandaise</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== PANCAKES ========== -->
+    <div class="menu-section reveal" id="pancakes">
+      <div class="menu-section__header">
+        <h2>Pancakes</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item">
+          <div class="menu-item__name">Buttermilk Pancakes</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__name">Reese's Peanut Butter Buttermilk Pancakes</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__name">The "Elvis"</div>
+          <div class="menu-item__desc">Peanut butter chips & bananas with peanut butter drizzle</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__name">Blueberry Explosion Pancakes</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__name">Banana Nut Pancakes</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE BANNER -->
+    <div class="menu-image-banner reveal-scale">
+      <img src="images/pancake.png" alt="Fluffy pancakes at Locals Diner" loading="lazy">
+      <div class="menu-image-banner__overlay">
+        <div class="menu-image-banner__text">
+          <h3>Stacks of Happiness</h3>
+          <p>Fluffy, golden, and served with a smile</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== FRENCH TOAST ========== -->
+    <div class="menu-section reveal" id="french-toast">
+      <div class="menu-section__header">
+        <h2>French Toast</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item">
+          <div class="menu-item__name">Jumbo French Toast</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__name">Cap'n Crunch French Toast</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__name">Cinnamon French Toast</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__name">Raisin French Toast</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__name">Coffee Roll French Toast</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__name">French Toast Sandwich</div>
+          <div class="menu-item__desc">Two eggs and cheese between two slices of Texas toast with home fries</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== HOMEMADE WAFFLES ========== -->
+    <div class="menu-section reveal" id="waffles">
+      <div class="menu-section__header">
+        <h2>Homemade Waffles</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item">
+          <div class="menu-item__name">Belgian Waffle</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__name">Chocolate Chip Waffle</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__name">Banana & Waffles</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item__name">Fried Chicken on Top of Waffles</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== LUNCH ========== -->
+    <div class="menu-section reveal" id="lunch">
+      <div class="menu-section__header">
+        <span class="eyebrow">11:30 AM – 2:00 PM · Wed–Sat</span>
+        <h2>Lunch Menu</h2>
+        <div class="divider"></div>
+      </div>
+
+      <!-- Soups & Salads -->
+      <div class="menu-category">
+        <h3>Soups & Salads</h3>
+        <div class="menu-items">
+          <div class="menu-item">
+            <div class="menu-item__name">Soup of the Day</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__name">Chowder of the Day</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__name">House Garden Salad</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__name">Greek Salad</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__name">Chef Julienne Salad</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__name">Salad Add-Ons</div>
+            <div class="menu-item__desc">Grilled Chicken, Buffalo Chicken, Chicken Salad, Tuna Salad</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Starters -->
+      <div class="menu-category">
+        <h3>Starters</h3>
+        <div class="menu-list">
+          <div class="menu-list-item">Fried Mozzarella Sticks</div>
+          <div class="menu-list-item">Housemade Chicken Fingers</div>
+          <div class="menu-list-item">Buffalo Chicken Fingers</div>
+          <div class="menu-list-item">Housemade Onion Rings</div>
+          <div class="menu-list-item">Bacon Cheddar Fries</div>
+          <div class="menu-list-item">Sampler Platter</div>
+        </div>
+      </div>
+
+      <!-- Deli Sandwiches -->
+      <div class="menu-category">
+        <h3>Deli Sandwiches <span style="font-family: var(--font-body); font-size: 0.8rem; font-weight: 400; color: var(--text-muted);">with fries or chips</span></h3>
+        <div class="menu-list">
+          <div class="menu-list-item">B.L.T.</div>
+          <div class="menu-list-item">Thick Sliced Turkey Breast</div>
+          <div class="menu-list-item">Tuna Salad</div>
+          <div class="menu-list-item">Chicken Salad</div>
+          <div class="menu-list-item">Tuna Melt</div>
+        </div>
+      </div>
+
+      <!-- Hot Sandwiches -->
+      <div class="menu-category">
+        <h3>Hot Sandwiches <span style="font-family: var(--font-body); font-size: 0.8rem; font-weight: 400; color: var(--text-muted);">with fries or chips</span></h3>
+        <div class="menu-list">
+          <div class="menu-list-item">Haddock</div>
+          <div class="menu-list-item">Fried Chicken</div>
+          <div class="menu-list-item">Grilled Chicken</div>
+          <div class="menu-list-item">Chicken Parmesan</div>
+          <div class="menu-list-item">Buffalo Chicken</div>
+          <div class="menu-list-item">Chicken Bacon Ranch Wrap</div>
+          <div class="menu-list-item">Steak Bomb Wrap</div>
+        </div>
+      </div>
+
+      <!-- Hand-Made Burgers -->
+      <div class="menu-category">
+        <h3>Hand-Made Burgers</h3>
+        <div class="menu-items">
+          <div class="menu-item">
+            <div class="menu-item__name">Cheeseburger</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__name">Hamburger</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__name">Bacon Cheddar</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__name">Mushroom Swiss</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__name">BBQ Bacon Cheddar</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__name">Rise & Shine Burger</div>
+            <div class="menu-item__desc">Topped with egg, bacon & cheese</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item__name">Boom Boom Burger</div>
+            <div class="menu-item__desc">Bacon cheddar with sweet & spicy sauce</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Traditional Favorites -->
+      <div class="menu-category">
+        <h3>Traditional Favorites</h3>
+        <div class="menu-list">
+          <div class="menu-list-item">Marinated Steak Tips</div>
+          <div class="menu-list-item">Chicken Finger Plate</div>
+          <div class="menu-list-item">Hamburger Plate with Gravy</div>
+          <div class="menu-list-item">Shepard's Pie</div>
+          <div class="menu-list-item">Housemade Meatloaf with Gravy</div>
+          <div class="menu-list-item">Stuffed Turkey Dinner</div>
+          <div class="menu-list-item">Boneless Fried Chicken Breast</div>
+          <div class="menu-list-item">Pot Roast</div>
+          <div class="menu-list-item">2 Hot Dogs with Beans</div>
+          <div class="menu-list-item">Liver & Onions</div>
+          <div class="menu-list-item">Chicken Parmesan</div>
+          <div class="menu-list-item">American Chopped Suey</div>
+        </div>
+      </div>
+
+      <!-- Fresh Seafood -->
+      <div class="menu-category">
+        <h3>Fresh Seafood <span style="font-family: var(--font-body); font-size: 0.8rem; font-weight: 400; color: var(--text-muted);">with potato or vegetable</span></h3>
+        <div class="menu-list">
+          <div class="menu-list-item">Fried Haddock</div>
+          <div class="menu-list-item">Baked Haddock</div>
+          <div class="menu-list-item">Jumbo Shrimp</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE BANNER -->
+    <div class="menu-image-banner reveal-scale">
+      <img src="images/pies.jpg" alt="Homemade pies at Locals Diner" loading="lazy">
+      <div class="menu-image-banner__overlay">
+        <div class="menu-image-banner__text">
+          <h3>Save Room for Pie</h3>
+          <p>Every pie baked fresh in our kitchen</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== DESSERTS ========== -->
+    <div class="menu-section reveal" id="desserts">
+      <div class="menu-section__header">
+        <span class="eyebrow eyebrow--orange">Sweet Endings</span>
+        <h2>Desserts & Homemade Pies</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item"><div class="menu-item__name">Apple Pie</div></div>
+        <div class="menu-item"><div class="menu-item__name">Blueberry Pie</div></div>
+        <div class="menu-item"><div class="menu-item__name">Coconut Cream Pie</div></div>
+        <div class="menu-item"><div class="menu-item__name">Chocolate Cream Pie</div></div>
+        <div class="menu-item"><div class="menu-item__name">Banana Cream Pie</div></div>
+        <div class="menu-item"><div class="menu-item__name">Lemon Meringue Pie</div></div>
+        <div class="menu-item"><div class="menu-item__name">Seasonal Pies</div></div>
+        <div class="menu-item"><div class="menu-item__name">Grilled Coffee Roll</div></div>
+        <div class="menu-item"><div class="menu-item__name">Assorted Muffins</div></div>
+        <div class="menu-item"><div class="menu-item__name">Bagel with Cream Cheese</div></div>
+      </div>
+
+      <div class="pie-cta reveal">
+        <h3>🥧 Whole Pies Available for Pre-Order!</h3>
+        <p>Call ahead and take home a whole homemade pie for any occasion.</p>
+        <a href="tel:+19789570065" class="btn btn--primary btn--lg" style="position: relative; z-index: 1;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call (978) 957-0065
+        </a>
+      </div>
+    </div>
+
+    <!-- ========== SIDES ========== -->
+    <div class="menu-section reveal" id="sides">
+      <div class="menu-section__header">
+        <h2>Sides</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="menu-category">
+        <h3>Breakfast Sides</h3>
+        <div class="menu-list">
+          <div class="menu-list-item">Bacon</div>
+          <div class="menu-list-item">Sausage</div>
+          <div class="menu-list-item">Corned Beef Hash</div>
+          <div class="menu-list-item">Country Ham / Kielbasa</div>
+          <div class="menu-list-item">Toast</div>
+          <div class="menu-list-item">Sourdough Toast</div>
+          <div class="menu-list-item">Hollandaise</div>
+          <div class="menu-list-item">Beans</div>
+          <div class="menu-list-item">Grilled Coffee Roll</div>
+          <div class="menu-list-item">Home Fries</div>
+          <div class="menu-list-item">Oatmeal</div>
+          <div class="menu-list-item">Biscuits & Sausage Gravy</div>
+          <div class="menu-list-item">Real Maple Syrup</div>
+          <div class="menu-list-item">Extra Egg</div>
+        </div>
+      </div>
+
+      <div class="menu-category">
+        <h3>Lunch Sides</h3>
+        <div class="menu-list">
+          <div class="menu-list-item">French Fries</div>
+          <div class="menu-list-item">Onion Rings</div>
+          <div class="menu-list-item">Bacon Cheddar Fries</div>
+          <div class="menu-list-item">Side Salad</div>
+          <div class="menu-list-item">Cup of Soup</div>
+          <div class="menu-list-item">Bowl of Beans</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== BEVERAGES ========== -->
+    <div class="menu-section reveal" id="beverages">
+      <div class="menu-section__header">
+        <h2>Beverages</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="menu-list">
+        <div class="menu-list-item">Coffee / Tea</div>
+        <div class="menu-list-item">Iced Tea / Coffee</div>
+        <div class="menu-list-item">Fountain Soda</div>
+        <div class="menu-list-item">Milk</div>
+        <div class="menu-list-item">Chocolate Milk</div>
+        <div class="menu-list-item">Apple Juice</div>
+        <div class="menu-list-item">Orange Juice</div>
+        <div class="menu-list-item">Tomato Juice</div>
+        <div class="menu-list-item">V8</div>
+        <div class="menu-list-item">Cranberry Juice</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__main">
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <img src="images/logo_tsp.jpeg" alt="Locals Diner" width="56" height="56" loading="lazy">
+          <div class="footer__logo-text">
+            <span class="footer__logo-name">Locals Diner</span>
+            <span class="footer__logo-tagline">Breakfast & Lunch · Dracut, MA</span>
+          </div>
+        </div>
+        <p>Where Locals Become Family. Scratch-made breakfast &amp; lunch served with heart in the soul of Dracut. Great Food&nbsp;•&nbsp;Great Portions&nbsp;•&nbsp;Great People.</p>
+        <div class="footer__social">
+          <a href="https://facebook.com/localsdiner" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="menu.html">Our Menu</a></li>
+          <li><a href="rewards.html">Loyalty Rewards</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Visit</h4>
+        <ul>
+          <li><a href="contact.html">Find Us</a></li>
+          <li><a href="contact.html">Hours</a></li>
+          <li><a href="hiring.html">Careers</a></li>
+          <li><a href="tel:+19789570065">Call Us</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+19789570065"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.94.36 1.86.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.95.34 1.87.58 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(978) 957-0065</a></li>
+          <li><a href="https://maps.google.com/?q=1420+Lakeview+Ave,+Dracut,+MA+01826" target="_blank" rel="noopener noreferrer"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>1420 Lakeview Ave</a></li>
+          <li><a href="https://facebook.com/localsdiner" target="_blank" rel="noopener noreferrer"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>@localsdiner</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2024 Locals Diner. All rights reserved. Made with ♥ in Dracut, MA.</p>
+      <div class="footer__bottom-links">
+        <span style="font-size: 0.8rem; color: var(--text-on-dark-muted);">Great Food &bull; Great Portions &bull; Great People</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- BACK TO TOP -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+
+<script>
+(function() {
+  'use strict';
+  const nav = document.getElementById('nav');
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const backToTop = document.getElementById('backToTop');
+
+  function handleNavScroll() {
+    const scrollY = window.scrollY;
+    if (scrollY > 80) nav.classList.add('scrolled'); else nav.classList.remove('scrolled');
+    if (scrollY > 600) backToTop.classList.add('visible'); else backToTop.classList.remove('visible');
+  }
+
+  hamburger.addEventListener('click', function() {
+    const isOpen = mobileMenu.classList.contains('open');
+    hamburger.classList.toggle('active');
+    mobileMenu.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', !isOpen);
+    mobileMenu.setAttribute('aria-hidden', isOpen);
+    document.body.style.overflow = isOpen ? '' : 'hidden';
+  });
+
+  mobileMenu.querySelectorAll('a').forEach(function(link) {
+    link.addEventListener('click', function() {
+      hamburger.classList.remove('active');
+      mobileMenu.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      mobileMenu.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    });
+  });
+
+  backToTop.addEventListener('click', function() { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+  const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+  function checkReveal() {
+    const triggerPoint = window.innerHeight * 0.88;
+    revealElements.forEach(function(el) {
+      if (el.getBoundingClientRect().top < triggerPoint) el.classList.add('revealed');
+    });
+  }
+
+  // Menu tab active state on scroll
+  const menuTabs = document.querySelectorAll('.menu-tab');
+  const menuSections = document.querySelectorAll('.menu-section');
+  function updateMenuTabs() {
+    let current = '';
+    menuSections.forEach(function(section) {
+      const sectionTop = section.offsetTop - 200;
+      if (window.scrollY >= sectionTop) current = section.getAttribute('id');
+    });
+    menuTabs.forEach(function(tab) {
+      tab.classList.remove('active');
+      if (tab.getAttribute('href') === '#' + current) tab.classList.add('active');
+    });
+  }
+
+  let ticking = false;
+  function onScroll() {
+    if (!ticking) {
+      window.requestAnimationFrame(function() {
+        handleNavScroll();
+        checkReveal();
+        updateMenuTabs();
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
+      hamburger.classList.remove('active'); mobileMenu.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false'); mobileMenu.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = ''; hamburger.focus();
+    }
+  });
+
+  handleNavScroll();
+  setTimeout(checkReveal, 100);
+})();
+</script>
+</body>
+</html>

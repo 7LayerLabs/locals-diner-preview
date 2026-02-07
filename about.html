@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us - Our Family Story & Values | Locals Diner</title>
+<meta name="description" content="Learn about Locals Diner — a family tradition of serving great food at great prices in Dracut, MA. Our story, values, and commitment to community.">
+<link rel="icon" type="image/jpeg" href="images/logo_tsp.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,400;1,9..144,500&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #1B2D4F; --navy-deep: #0F1A2E; --navy-light: #2A4270;
+  --teal: #00B4D8; --teal-light: #48CAE4; --teal-dark: #0096B7; --teal-glow: rgba(0,180,216,0.15);
+  --orange: #F5A623; --orange-light: #F7BC5C; --orange-dark: #E09010; --orange-glow: rgba(245,166,35,0.15);
+  --cream: #F5F0E8; --cream-dark: #E8E0D4; --cream-light: #FAF8F4; --white: #FFFFFF; --black: #0A0A0A;
+  --text-primary: #1B2D4F; --text-secondary: #5A6A80; --text-muted: #8A96A6; --text-on-dark: #F5F0E8; --text-on-dark-muted: rgba(245,240,232,0.7);
+  --border: rgba(27,45,79,0.1); --border-dark: rgba(245,240,232,0.15);
+  --font-display: 'Fraunces', Georgia, serif; --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px; --space-5: 24px; --space-6: 32px; --space-7: 48px; --space-8: 64px; --space-9: 96px; --space-10: 128px;
+  --container: 1200px; --container-narrow: 900px; --container-wide: 1400px;
+  --radius-sm: 8px; --radius-md: 12px; --radius-lg: 20px; --radius-xl: 32px; --radius-full: 9999px;
+  --shadow-sm: 0 1px 3px rgba(27,45,79,0.06), 0 1px 2px rgba(27,45,79,0.04);
+  --shadow-md: 0 4px 12px rgba(27,45,79,0.08), 0 2px 4px rgba(27,45,79,0.04);
+  --shadow-lg: 0 12px 40px rgba(27,45,79,0.12), 0 4px 12px rgba(27,45,79,0.06);
+  --shadow-xl: 0 24px 60px rgba(27,45,79,0.16), 0 8px 24px rgba(27,45,79,0.08);
+  --shadow-glow-teal: 0 0 30px rgba(0,180,216,0.3); --shadow-glow-orange: 0 0 30px rgba(245,166,35,0.3);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1); --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --duration-fast: 200ms; --duration-normal: 400ms; --duration-slow: 600ms;
+  --nav-height: 80px;
+}
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; scroll-padding-top: var(--nav-height); }
+body { font-family: var(--font-body); font-size: 16px; line-height: 1.7; color: var(--text-primary); background: var(--cream); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; text-decoration: none; transition: color var(--duration-fast) var(--ease-out); }
+button { font-family: inherit; cursor: pointer; border: none; background: none; }
+ul, ol { list-style: none; }
+h1,h2,h3,h4,h5,h6 { font-family: var(--font-display); font-weight: 700; line-height: 1.15; color: var(--text-primary); }
+.heading-xl { font-size: clamp(2.8rem,6vw,5.5rem); font-weight: 800; letter-spacing: -0.03em; line-height: 1.05; }
+.heading-lg { font-size: clamp(2.2rem,4.5vw,3.8rem); font-weight: 700; letter-spacing: -0.025em; line-height: 1.1; }
+.heading-md { font-size: clamp(1.5rem,3vw,2.2rem); font-weight: 600; letter-spacing: -0.02em; }
+.text-lg { font-size: clamp(1.05rem,1.5vw,1.25rem); line-height: 1.75; }
+.container { width: 100%; max-width: var(--container); margin: 0 auto; padding: 0 var(--space-5); }
+.container--narrow { max-width: var(--container-narrow); }
+.section { padding: var(--space-9) 0; position: relative; }
+.section--lg { padding: var(--space-10) 0; }
+.eyebrow { font-family: var(--font-body); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--teal); display: inline-flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-4); }
+.eyebrow::before { content: ''; display: inline-block; width: 24px; height: 2px; background: var(--teal); border-radius: 2px; }
+.eyebrow--orange { color: var(--orange); }
+.eyebrow--orange::before { background: var(--orange); }
+.eyebrow--light { color: var(--teal-light); }
+.eyebrow--light::before { background: var(--teal-light); }
+.section-intro { max-width: 680px; margin-bottom: var(--space-8); }
+.section-intro.centered { margin-left: auto; margin-right: auto; text-align: center; }
+.section-intro.centered .eyebrow { justify-content: center; }
+.section-intro p { color: var(--text-secondary); margin-top: var(--space-4); }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2); font-family: var(--font-body); font-size: 0.9rem; font-weight: 600; padding: 14px 32px; border-radius: var(--radius-full); transition: all var(--duration-normal) var(--ease-out); position: relative; overflow: hidden; white-space: nowrap; }
+.btn::before { content: ''; position: absolute; inset: 0; border-radius: inherit; opacity: 0; transition: opacity var(--duration-fast) var(--ease-out); }
+.btn:hover::before { opacity: 1; }
+.btn--primary { background: var(--orange); color: var(--navy-deep); }
+.btn--primary::before { background: linear-gradient(135deg, var(--orange-light), var(--orange-dark)); }
+.btn--primary:hover { transform: translateY(-2px); box-shadow: var(--shadow-glow-orange); }
+.btn--teal { background: var(--teal); color: var(--white); }
+.btn--teal::before { background: linear-gradient(135deg, var(--teal-light), var(--teal-dark)); }
+.btn--teal:hover { transform: translateY(-2px); box-shadow: var(--shadow-glow-teal); }
+.btn--outline { background: transparent; color: var(--navy); border: 2px solid var(--navy); }
+.btn--outline:hover { background: var(--navy); color: var(--white); transform: translateY(-2px); }
+.btn--lg { padding: 18px 42px; font-size: 1rem; }
+.btn--sm { padding: 10px 24px; font-size: 0.85rem; }
+.btn-group { display: flex; flex-wrap: wrap; gap: var(--space-4); align-items: center; }
+.divider { width: 60px; height: 3px; background: linear-gradient(90deg, var(--teal), var(--orange)); border-radius: 3px; margin: var(--space-5) 0; }
+.divider.centered { margin-left: auto; margin-right: auto; }
+.reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out); }
+.reveal.revealed { opacity: 1; transform: translateY(0); }
+.reveal-left { opacity: 0; transform: translateX(-50px); transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out); }
+.reveal-left.revealed { opacity: 1; transform: translateX(0); }
+.reveal-right { opacity: 0; transform: translateX(50px); transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out); }
+.reveal-right.revealed { opacity: 1; transform: translateX(0); }
+.reveal-scale { opacity: 0; transform: scale(0.92); transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out); }
+.reveal-scale.revealed { opacity: 1; transform: scale(1); }
+.stagger-1 { transition-delay: 0.1s; } .stagger-2 { transition-delay: 0.2s; } .stagger-3 { transition-delay: 0.3s; } .stagger-4 { transition-delay: 0.4s; }
+
+/* NAV */
+.nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; height: var(--nav-height); display: flex; align-items: center; transition: all var(--duration-normal) var(--ease-out); background: rgba(15,26,46,0.97); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); box-shadow: 0 4px 30px rgba(0,0,0,0.15); }
+.nav.scrolled { height: 70px; }
+.nav__inner { display: flex; align-items: center; justify-content: space-between; width: 100%; max-width: var(--container-wide); margin: 0 auto; padding: 0 var(--space-5); }
+.nav__logo { display: flex; align-items: center; gap: var(--space-3); z-index: 1001; }
+.nav__logo img { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; transition: transform var(--duration-normal) var(--ease-out); border: 2px solid rgba(255,255,255,0.2); }
+.nav.scrolled .nav__logo img { width: 44px; height: 44px; }
+.nav__logo:hover img { transform: rotate(-8deg) scale(1.05); }
+.nav__logo-text { display: flex; flex-direction: column; }
+.nav__logo-name { font-family: var(--font-display); font-size: 1.15rem; font-weight: 800; color: var(--white); letter-spacing: -0.01em; line-height: 1.1; }
+.nav__logo-tagline { font-size: 0.65rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--teal-light); line-height: 1; margin-top: 2px; }
+.nav__links { display: flex; align-items: center; gap: var(--space-1); }
+.nav__link { font-size: 0.85rem; font-weight: 500; color: rgba(255,255,255,0.8); padding: 8px 16px; border-radius: var(--radius-full); transition: all var(--duration-fast) var(--ease-out); }
+.nav__link:hover { color: var(--white); background: rgba(255,255,255,0.08); }
+.nav__link.active { color: var(--white); background: rgba(0,180,216,0.15); }
+.nav__cta { margin-left: var(--space-3); }
+.nav__hamburger { display: none; flex-direction: column; gap: 5px; padding: 8px; z-index: 1001; cursor: pointer; }
+.nav__hamburger span { display: block; width: 24px; height: 2px; background: var(--white); border-radius: 2px; transition: all var(--duration-normal) var(--ease-out); transform-origin: center; }
+.nav__hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+.nav__hamburger.active span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.nav__hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+.nav__mobile { position: fixed; inset: 0; background: var(--navy-deep); z-index: 999; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--space-4); opacity: 0; pointer-events: none; transition: opacity var(--duration-normal) var(--ease-out); }
+.nav__mobile.open { opacity: 1; pointer-events: all; }
+.nav__mobile a { font-family: var(--font-display); font-size: 1.8rem; font-weight: 600; color: var(--white); padding: 8px 20px; border-radius: var(--radius-md); transition: all var(--duration-fast) var(--ease-out); transform: translateY(20px); opacity: 0; }
+.nav__mobile.open a { transform: translateY(0); opacity: 1; }
+.nav__mobile a:nth-child(1){transition-delay:.05s} .nav__mobile a:nth-child(2){transition-delay:.1s} .nav__mobile a:nth-child(3){transition-delay:.15s} .nav__mobile a:nth-child(4){transition-delay:.2s} .nav__mobile a:nth-child(5){transition-delay:.25s} .nav__mobile a:nth-child(6){transition-delay:.3s} .nav__mobile a:nth-child(7){transition-delay:.35s} .nav__mobile a:nth-child(8){transition-delay:.4s}
+.nav__mobile a:hover { color: var(--teal-light); background: rgba(0,180,216,0.08); }
+.nav__mobile-hours { margin-top: var(--space-6); text-align: center; color: var(--text-on-dark-muted); font-size: 0.9rem; }
+.nav__mobile-hours strong { color: var(--orange); }
+
+/* PAGE HERO */
+.page-hero { position: relative; padding: calc(var(--nav-height) + var(--space-9)) 0 var(--space-9); background: var(--navy-deep); overflow: hidden; }
+.page-hero__bg { position: absolute; inset: 0; }
+.page-hero__bg img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.3) saturate(1.2); }
+.page-hero__overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(15,26,46,0.92) 0%, rgba(15,26,46,0.6) 50%, rgba(15,26,46,0.8) 100%); }
+.page-hero__content { position: relative; z-index: 2; max-width: 700px; }
+.page-hero__content .eyebrow { color: var(--teal-light); }
+.page-hero__content .eyebrow::before { background: var(--teal-light); }
+.page-hero__content h1 { color: var(--white); margin-bottom: var(--space-4); }
+.page-hero__content p { color: var(--text-on-dark-muted); font-size: 1.15rem; line-height: 1.7; }
+.page-hero__content .accent-orange { color: var(--orange); font-style: italic; }
+
+/* ABOUT GRID */
+.about__grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-8); align-items: center; }
+.about__images { position: relative; }
+.about__img-main { border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-xl); }
+.about__img-main img { width: 100%; height: 450px; object-fit: cover; transition: transform 0.6s var(--ease-out); }
+.about__img-main:hover img { transform: scale(1.03); }
+.about__img-float { position: absolute; bottom: -30px; right: -30px; width: 200px; height: 200px; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-xl); border: 5px solid var(--cream-light); }
+.about__img-float img { width: 100%; height: 100%; object-fit: cover; }
+.about__content { padding: var(--space-5) 0; }
+.about__content p { color: var(--text-secondary); margin-bottom: var(--space-4); }
+
+/* QUOTE */
+.quote-section { background: var(--navy-deep); padding: var(--space-8) 0; position: relative; overflow: hidden; }
+.quote-section::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 50% 50%, rgba(245,166,35,0.08), transparent 60%); }
+.quote-section blockquote { position: relative; z-index: 1; max-width: 800px; margin: 0 auto; text-align: center; font-family: var(--font-display); font-style: italic; font-size: clamp(1.5rem, 3vw, 2.5rem); font-weight: 500; color: var(--white); line-height: 1.4; }
+.quote-section blockquote span { color: var(--orange); }
+.quote-section .quote-mark { font-size: 5rem; color: var(--orange); opacity: 0.3; line-height: 0; display: block; }
+
+/* VALUES */
+.values__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-5); }
+.value-card { background: var(--white); border-radius: var(--radius-lg); padding: var(--space-6); text-align: center; box-shadow: var(--shadow-sm); transition: all var(--duration-normal) var(--ease-out); }
+.value-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+.value-card__icon { width: 64px; height: 64px; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-5); }
+.value-card__icon--teal { background: var(--teal-glow); }
+.value-card__icon--orange { background: var(--orange-glow); }
+.value-card__icon svg { width: 28px; height: 28px; }
+.value-card__icon--teal svg { color: var(--teal); }
+.value-card__icon--orange svg { color: var(--orange-dark); }
+.value-card h3 { font-family: var(--font-display); font-size: 1.2rem; font-weight: 700; margin-bottom: var(--space-2); }
+.value-card p { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; }
+
+/* STORY SECTION ALT */
+.story-alt { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-8); align-items: center; }
+.story-alt--reverse { direction: rtl; }
+.story-alt--reverse > * { direction: ltr; }
+.story-alt__image { border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-xl); height: 400px; }
+.story-alt__image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s var(--ease-out); }
+.story-alt__image:hover img { transform: scale(1.03); }
+.story-alt__content h2 { margin-bottom: var(--space-4); }
+.story-alt__content p { color: var(--text-secondary); line-height: 1.75; margin-bottom: var(--space-4); }
+
+/* FOOTER */
+.footer { background: var(--navy-deep); color: var(--text-on-dark); border-top: 1px solid rgba(255,255,255,0.05); }
+.footer__main { padding: var(--space-8) 0; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: var(--space-7); }
+.footer__brand { max-width: 320px; }
+.footer__logo { display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-5); }
+.footer__logo img { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; border: 2px solid rgba(255,255,255,0.15); }
+.footer__logo-text { display: flex; flex-direction: column; }
+.footer__logo-name { font-family: var(--font-display); font-size: 1.2rem; font-weight: 800; color: var(--white); }
+.footer__logo-tagline { font-size: 0.65rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--teal-light); }
+.footer__brand p { font-size: 0.9rem; color: var(--text-on-dark-muted); line-height: 1.7; margin-bottom: var(--space-5); }
+.footer__social { display: flex; gap: var(--space-3); }
+.footer__social a { width: 42px; height: 42px; border-radius: 50%; background: rgba(255,255,255,0.06); display: flex; align-items: center; justify-content: center; transition: all var(--duration-fast) var(--ease-out); }
+.footer__social a:hover { background: var(--teal); transform: translateY(-2px); }
+.footer__social a svg { width: 18px; height: 18px; color: var(--text-on-dark-muted); }
+.footer__social a:hover svg { color: var(--white); }
+.footer__col h4 { font-family: var(--font-display); font-size: 1rem; font-weight: 700; color: var(--white); margin-bottom: var(--space-4); }
+.footer__col ul li { margin-bottom: var(--space-2); }
+.footer__col ul li a { font-size: 0.88rem; color: var(--text-on-dark-muted); transition: all var(--duration-fast) var(--ease-out); display: inline-flex; align-items: center; gap: var(--space-2); }
+.footer__col ul li a:hover { color: var(--teal-light); transform: translateX(3px); }
+.footer__bottom { padding: var(--space-5) 0; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-3); }
+.footer__bottom p { font-size: 0.8rem; color: var(--text-on-dark-muted); }
+.back-to-top { position: fixed; bottom: var(--space-6); right: var(--space-6); width: 48px; height: 48px; border-radius: 50%; background: var(--navy); color: var(--white); display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-lg); z-index: 900; opacity: 0; pointer-events: none; transform: translateY(10px); transition: all var(--duration-normal) var(--ease-out); border: 2px solid rgba(0,180,216,0.2); }
+.back-to-top.visible { opacity: 1; pointer-events: all; transform: translateY(0); }
+.back-to-top:hover { background: var(--teal); border-color: var(--teal); transform: translateY(-3px); box-shadow: var(--shadow-glow-teal); }
+.back-to-top svg { width: 20px; height: 20px; }
+
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+
+@media (max-width: 1024px) {
+  .values__grid { grid-template-columns: repeat(2, 1fr); }
+  .footer__main { grid-template-columns: 1fr 1fr; gap: var(--space-6); }
+}
+@media (max-width: 768px) {
+  :root { --nav-height: 70px; }
+  .section { padding: var(--space-8) 0; }
+  .nav__links { display: none; }
+  .nav__hamburger { display: flex; }
+  .about__grid { grid-template-columns: 1fr; gap: var(--space-6); }
+  .about__img-float { right: var(--space-4); bottom: -20px; width: 150px; height: 150px; }
+  .story-alt { grid-template-columns: 1fr; }
+  .story-alt--reverse { direction: ltr; }
+  .story-alt__image { height: 300px; }
+  .values__grid { grid-template-columns: 1fr 1fr; }
+  .footer__main { grid-template-columns: 1fr; gap: var(--space-5); }
+  .footer__bottom { flex-direction: column; text-align: center; }
+}
+@media (max-width: 480px) {
+  .values__grid { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  .reveal, .reveal-left, .reveal-right, .reveal-scale { opacity: 1; transform: none; }
+}
+:focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; border-radius: 4px; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+</style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo" aria-label="Locals Diner — Home">
+      <img src="images/logo_tsp.jpeg" alt="Locals Diner Logo" width="52" height="52">
+      <div class="nav__logo-text">
+        <span class="nav__logo-name">Locals Diner</span>
+        <span class="nav__logo-tagline">Breakfast & Lunch</span>
+      </div>
+    </a>
+    <div class="nav__links">
+      <a href="about.html" class="nav__link active">About</a>
+      <a href="menu.html" class="nav__link">Menu</a>
+      <a href="rewards.html" class="nav__link">Rewards</a>
+      <a href="community.html" class="nav__link">Community</a>
+      <a href="gallery.html" class="nav__link">Gallery</a>
+      <a href="contact.html" class="nav__link">Find Us</a>
+      <a href="tel:+19789570065" class="btn btn--primary btn--sm nav__cta">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call Now
+      </a>
+    </div>
+    <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav__mobile" id="mobileMenu" aria-hidden="true">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="menu.html">Menu</a>
+    <a href="rewards.html">Rewards</a>
+    <a href="community.html">Community</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="hiring.html">Careers</a>
+    <a href="contact.html">Find Us</a>
+    <a href="tel:+19789570065" class="btn btn--primary btn--lg" style="margin-top:16px;">(978) 957-0065</a>
+    <div class="nav__mobile-hours"><p><strong>Wed – Sun</strong> 7:30 AM – 2:00 PM</p><p>Mon – Tue: Closed</p></div>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero__bg">
+    <img src="images/diningroom.jpeg" alt="Locals Diner dining room" width="1920" height="600">
+  </div>
+  <div class="page-hero__overlay"></div>
+  <div class="container">
+    <div class="page-hero__content" style="animation: fadeInUp 0.8s var(--ease-out) 0.2s both;">
+      <span class="eyebrow eyebrow--light">Our Story</span>
+      <h1 class="heading-xl">A Family Tradition of<br>Great Food at <span class="accent-orange">Great Prices</span></h1>
+      <p>More than a diner — it's a gathering place where locals become family, one meal at a time.</p>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE SECTION -->
+<div class="quote-section">
+  <div class="container">
+    <blockquote class="reveal">
+      <span class="quote-mark">"</span>
+      Give them great food, great portions<br>at a <span>great price.</span>
+    </blockquote>
+  </div>
+</div>
+
+<!-- A FAMILY LEGACY -->
+<section class="section section--lg" style="background: var(--cream-light);">
+  <div class="container">
+    <div class="about__grid">
+      <div class="about__images reveal-left">
+        <div class="about__img-main">
+          <img src="images/counter.jpg" alt="The counter at Locals Diner" width="600" height="450" loading="lazy">
+        </div>
+        <div class="about__img-float">
+          <img src="images/happy.png" alt="Happy team at Locals Diner" width="200" height="200" loading="lazy">
+        </div>
+      </div>
+      <div class="about__content reveal-right">
+        <span class="eyebrow">A Family Legacy</span>
+        <h2 class="heading-lg">Built on a<br>Father's Philosophy</h2>
+        <div class="divider"></div>
+        <p class="text-lg">Locals Diner was born from a simple yet powerful belief — that a great meal doesn't need to cost a fortune, and that every person who walks through the door deserves to be treated like family.</p>
+        <p>This philosophy was passed down from father to family — a legacy of generosity, hard work, and honest homemade food. Every plate that leaves our kitchen honors that legacy. Every smile from our team carries that spirit forward.</p>
+        <p>We're not just a restaurant. We're a community gathering place where neighbors meet, stories are shared, and memories are made over eggs, pancakes, and the best cup of coffee in Dracut.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMMUNITY-CENTERED -->
+<section class="section section--lg" style="background: var(--cream);">
+  <div class="container">
+    <div class="story-alt story-alt--reverse">
+      <div class="story-alt__image reveal-right">
+        <img src="images/diningroom.jpeg" alt="Locals Diner warm dining room" loading="lazy">
+      </div>
+      <div class="story-alt__content reveal-left">
+        <span class="eyebrow eyebrow--orange">Community-Centered</span>
+        <h2 class="heading-lg">Where Everyone<br>Belongs</h2>
+        <div class="divider"></div>
+        <p class="text-lg">At the heart of everything we do is a commitment to our community. We source quality ingredients, serve generous portions, and greet every guest with the kind of friendly service that makes you want to come back tomorrow.</p>
+        <p>Whether you're a regular who has their "usual" or a first-timer finding us for the first time, the experience is the same — warm, welcoming, and genuine. That's the Locals way.</p>
+        <a href="community.html" class="btn btn--teal">See Our Community</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT WE'RE ABOUT -->
+<section class="section section--lg" style="background: var(--cream-light);">
+  <div class="container">
+    <div class="story-alt">
+      <div class="story-alt__content reveal-left">
+        <span class="eyebrow">What We're About</span>
+        <h2 class="heading-lg">Honest Food.<br>Honest People.</h2>
+        <div class="divider"></div>
+        <p class="text-lg">We believe in homemade food that tastes like it was made by someone who cares — because it is. Every recipe is crafted from scratch, every portion is generous, and every price is fair.</p>
+        <p>We treat everyone like family. From the moment you walk in to the moment you leave (with a to-go box, naturally), our goal is simple: make your day a little better. That's what diners are supposed to do, and that's what we'll always be.</p>
+        <p>Great food. Great portions. Great people. That's the Locals Diner promise.</p>
+        <a href="menu.html" class="btn btn--primary">View Our Menu</a>
+      </div>
+      <div class="story-alt__image reveal-right">
+        <img src="images/happy.png" alt="Happy faces at Locals Diner" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUR VALUES -->
+<section class="section section--lg" style="background: var(--cream);">
+  <div class="container">
+    <div class="section-intro centered reveal">
+      <span class="eyebrow">What Drives Us</span>
+      <h2 class="heading-lg">Our Values</h2>
+      <p class="text-lg">Four principles that guide everything we do — from the kitchen to the community.</p>
+    </div>
+
+    <div class="values__grid">
+      <div class="value-card reveal stagger-1">
+        <div class="value-card__icon value-card__icon--teal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <h3>Quality</h3>
+        <p>Every dish is made from scratch with fresh, quality ingredients. No shortcuts, no compromises — just real food done right.</p>
+      </div>
+
+      <div class="value-card reveal stagger-2">
+        <div class="value-card__icon value-card__icon--orange">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </div>
+        <h3>Generosity</h3>
+        <p>Our portions are legendary. We believe you should leave full, happy, and already planning your next visit.</p>
+      </div>
+
+      <div class="value-card reveal stagger-3">
+        <div class="value-card__icon value-card__icon--teal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        </div>
+        <h3>Affordability</h3>
+        <p>Great food shouldn't break the bank. We keep our prices honest so everyone can enjoy a meal out with family.</p>
+      </div>
+
+      <div class="value-card reveal stagger-4">
+        <div class="value-card__icon value-card__icon--orange">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Community</h3>
+        <p>We're woven into the fabric of Dracut. Supporting local causes, welcoming neighbors, and building connections one breakfast at a time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section" style="background: var(--navy-deep); text-align: center; padding: var(--space-9) 0;">
+  <div class="container reveal">
+    <span class="eyebrow eyebrow--light" style="justify-content: center;">Come Visit</span>
+    <h2 class="heading-lg" style="color: var(--white); margin-bottom: var(--space-4);">Your Table is Waiting</h2>
+    <p style="color: var(--text-on-dark-muted); font-size: 1.1rem; max-width: 500px; margin: 0 auto var(--space-6);">Open Wednesday through Sunday, 7:30 AM – 2:00 PM. No reservations needed — just bring your appetite.</p>
+    <div class="btn-group" style="justify-content: center;">
+      <a href="menu.html" class="btn btn--primary btn--lg">View Our Menu</a>
+      <a href="contact.html" class="btn btn--teal btn--lg">Get Directions</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__main">
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <img src="images/logo_tsp.jpeg" alt="Locals Diner" width="56" height="56" loading="lazy">
+          <div class="footer__logo-text">
+            <span class="footer__logo-name">Locals Diner</span>
+            <span class="footer__logo-tagline">Breakfast & Lunch · Dracut, MA</span>
+          </div>
+        </div>
+        <p>Where Locals Become Family. Scratch-made breakfast &amp; lunch served with heart in the soul of Dracut.</p>
+        <div class="footer__social">
+          <a href="https://facebook.com/localsdiner" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__col"><h4>Quick Links</h4><ul><li><a href="about.html">About Us</a></li><li><a href="menu.html">Our Menu</a></li><li><a href="rewards.html">Loyalty Rewards</a></li><li><a href="community.html">Community</a></li><li><a href="gallery.html">Gallery</a></li></ul></div>
+      <div class="footer__col"><h4>Visit</h4><ul><li><a href="contact.html">Find Us</a></li><li><a href="contact.html">Hours</a></li><li><a href="hiring.html">Careers</a></li><li><a href="tel:+19789570065">Call Us</a></li></ul></div>
+      <div class="footer__col"><h4>Contact</h4><ul><li><a href="tel:+19789570065">(978) 957-0065</a></li><li><a href="https://maps.google.com/?q=1420+Lakeview+Ave,+Dracut,+MA+01826" target="_blank">1420 Lakeview Ave</a></li><li><a href="https://facebook.com/localsdiner" target="_blank">@localsdiner</a></li></ul></div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2024 Locals Diner. All rights reserved. Made with ♥ in Dracut, MA.</p>
+      <span style="font-size: 0.8rem; color: var(--text-on-dark-muted);">Great Food &bull; Great Portions &bull; Great People</span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+
+<script>
+(function() {
+  'use strict';
+  const nav = document.getElementById('nav');
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const backToTop = document.getElementById('backToTop');
+
+  function handleNavScroll() {
+    if (window.scrollY > 80) nav.classList.add('scrolled'); else nav.classList.remove('scrolled');
+    if (window.scrollY > 600) backToTop.classList.add('visible'); else backToTop.classList.remove('visible');
+  }
+  hamburger.addEventListener('click', function() {
+    const isOpen = mobileMenu.classList.contains('open');
+    hamburger.classList.toggle('active'); mobileMenu.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', !isOpen); mobileMenu.setAttribute('aria-hidden', isOpen);
+    document.body.style.overflow = isOpen ? '' : 'hidden';
+  });
+  mobileMenu.querySelectorAll('a').forEach(function(link) {
+    link.addEventListener('click', function() {
+      hamburger.classList.remove('active'); mobileMenu.classList.remove('open');
+      hamburger.setAttribute('aria-expanded','false'); mobileMenu.setAttribute('aria-hidden','true');
+      document.body.style.overflow = '';
+    });
+  });
+  backToTop.addEventListener('click', function() { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+  const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+  function checkReveal() {
+    const triggerPoint = window.innerHeight * 0.88;
+    revealElements.forEach(function(el) { if (el.getBoundingClientRect().top < triggerPoint) el.classList.add('revealed'); });
+  }
+  let ticking = false;
+  window.addEventListener('scroll', function() {
+    if (!ticking) { window.requestAnimationFrame(function() { handleNavScroll(); checkReveal(); ticking = false; }); ticking = true; }
+  }, { passive: true });
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
+      hamburger.classList.remove('active'); mobileMenu.classList.remove('open');
+      hamburger.setAttribute('aria-expanded','false'); mobileMenu.setAttribute('aria-hidden','true');
+      document.body.style.overflow = ''; hamburger.focus();
+    }
+  });
+  handleNavScroll(); setTimeout(checkReveal, 100);
+})();
+</script>
+</body>
+</html>
